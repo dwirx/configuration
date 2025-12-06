@@ -26,12 +26,5 @@ Repo ini bernama `configuration`, jadi gunakan skrip ini untuk menautkan berkas 
    ./setup.sh ~/.tmux.conf
    ```
    Jika file belum ada di repo tapi ada di `$HOME`, skrip akan menyalinnya ke repo terlebih dulu lalu membuat symlink.
-6) Mode sinkronisasi dari $HOME ke repo (berguna setelah mengubah config di mesin lain atau sebelum push):
-   ```
-   ./setup.sh --sync
-   # atau pilih file spesifik
-   ./setup.sh --sync ~/.tmux.conf .config/nvim/init.vim
-   ```
-   File/folder di $HOME akan disalin ke repo, versi repo lama dipindah ke `~/.dotfile-backups/<timestamp>/repo`.
-7) Pastikan dependensi yang dirujuk di `.zshrc` terpasang (mis. Oh My Zsh, plugin `zsh-autosuggestions` dan `zsh-syntax-highlighting`, serta `fnm`/`bun` jika dipakai).
+6) Pastikan dependensi yang dirujuk di `.zshrc` terpasang (mis. Oh My Zsh, plugin `zsh-autosuggestions` dan `zsh-syntax-highlighting`, serta `fnm`/`bun` jika dipakai).
 
