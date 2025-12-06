@@ -14,6 +14,50 @@ COMMON_PATHS=(
   .config/nvim
   .config/nvim/init.vim
 )
+
+CREATE_MISSING=0
+
+usage() {
+  cat <<'EOF'
+Pemakaian:
+  ./setup.sh [opsi] [path ...]
+
+Opsi:
+  -c, --create-missing  Buat path yang hilang di repo (folder/file kosong jika perlu)
+  -h, --help            Tampilkan bantuan ini
+
+Contoh:
+  ./setup.sh                            # tautan default
+  ./setup.sh .config/nvim               # tautkan folder nvim dari repo ke $HOME
+  ./setup.sh -c ~/.config/nvim          # jika belum ada di repo, buat/copy ke repo dulu lalu tautkan
+EOF
+}
+
+# Parsing opsi sederhana.
+while [[ $# -gt 0 ]]; do
+  case "$1" in
+    -c|--create-missing)
+      CREATE_MISSING=1
+      shift
+      ;;
+    -h|--help)
+      usage
+      exit 0
+      ;;
+    --)
+      shift
+      break
+      ;;
+    --*)
+      echo "Opsi tidak dikenal: $1"
+      exit 1
+      ;;
+    *)
+      break
+      ;;
+  esac
+done
+
 TARGETS=("$@")
 
 # Jika tidak ada argumen, pakai daftar default dan tambahkan path umum yang ditemukan.
@@ -29,7 +73,8 @@ fi
 mkdir -p "$BACKUP_DIR"
 
 link_path() {
-  local path="$1"
+  local input="$1"
+  local path="$input"
 
   # Hilangkan trailing slash agar symlink stabil untuk folder.
   path="${path%/}"
@@ -57,6 +102,25 @@ link_path() {
     mkdir -p "$(dirname "$src")"
     cp -a "$dest" "$src"
     echo "Copy $dest -> $src (repo)"
+  fi
+
+  # Jika masih belum ada di repo dan opsi create-missing diaktifkan, buat dari nol.
+  if [[ ! -e "$src" && $CREATE_MISSING -eq 1 ]]; then
+    local last="${path##*/}"
+    local dir_hint=0
+    # Anggap direktori jika input diakhiri slash atau nama terakhir tanpa tanda titik.
+    if [[ "$input" == */ || "$last" != *.* ]]; then
+      dir_hint=1
+    fi
+
+    mkdir -p "$(dirname "$src")"
+    if [[ $dir_hint -eq 1 ]]; then
+      mkdir -p "$src"
+      echo "Create dir $path di repo (--create-missing)"
+    else
+      : > "$src"
+      echo "Create file $path di repo (--create-missing)"
+    fi
   fi
 
   if [[ ! -e "$src" ]]; then
