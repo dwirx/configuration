@@ -7,6 +7,7 @@ set -euo pipefail
 
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BACKUP_DIR="$HOME/.dotfile-backups/$(date +%Y%m%d-%H%M%S)"
+REPO_BACKUP_DIR="$BACKUP_DIR/repo"
 FILES=(.zshrc .bashrc .vimrc)
 # Tambahan otomatis jika ada di repo atau di $HOME.
 COMMON_PATHS=(
@@ -15,6 +16,13 @@ COMMON_PATHS=(
   .config/nvim/init.vim
 )
 TARGETS=("$@")
+MODE="link"
+
+# Mode sync: salin dari $HOME ke repo agar mudah disimpan / diupload.
+if [[ ${#TARGETS[@]} -gt 0 && ( "${TARGETS[0]}" == "--sync" || "${TARGETS[0]}" == "sync" ) ]]; then
+  MODE="sync"
+  TARGETS=("${TARGETS[@]:1}")
+fi
 
 # Jika tidak ada argumen, pakai daftar default dan tambahkan path umum yang ditemukan.
 if [[ ${#TARGETS[@]} -eq 0 ]]; then
@@ -27,8 +35,9 @@ if [[ ${#TARGETS[@]} -eq 0 ]]; then
 fi
 
 mkdir -p "$BACKUP_DIR"
+mkdir -p "$REPO_BACKUP_DIR"
 
-link_path() {
+normalize_path() {
   local path="$1"
 
   # Hilangkan trailing slash agar symlink stabil untuk folder.
@@ -38,6 +47,13 @@ link_path() {
   if [[ "$path" = "$HOME"* ]]; then
     path="${path#"$HOME"/}"
   fi
+
+  echo "$path"
+}
+
+link_path() {
+  local path
+  path="$(normalize_path "$1")"
 
   if [[ -z "$path" ]]; then
     echo "Skip (path kosong)"
@@ -79,10 +95,50 @@ link_path() {
   echo "Link $path -> $src"
 }
 
+sync_path() {
+  local path
+  path="$(normalize_path "$1")"
+
+  if [[ -z "$path" ]]; then
+    echo "Skip (path kosong)"
+    return
+  fi
+
+  if [[ "$path" = /* ]]; then
+    echo "Skip $path (gunakan path relatif terhadap repo, bukan absolut)"
+    return
+  fi
+
+  local src_home="$HOME/$path"
+  local dest_repo="$REPO_DIR/$path"
+
+  if [[ ! -e "$src_home" ]]; then
+    echo "Skip $path (tidak ada di HOME)"
+    return
+  fi
+
+  if [[ -e "$dest_repo" || -L "$dest_repo" ]]; then
+    echo "Move repo $path -> $REPO_BACKUP_DIR/"
+    mv "$dest_repo" "$REPO_BACKUP_DIR/"
+  fi
+
+  mkdir -p "$(dirname "$dest_repo")"
+  cp -a "$src_home" "$dest_repo"
+  echo "Sync $path (HOME -> repo)"
+}
+
 for path in "${TARGETS[@]}"; do
-  link_path "$path"
+  if [[ "$MODE" == "sync" ]]; then
+    sync_path "$path"
+  else
+    link_path "$path"
+  fi
 done
 
 echo
-echo "Done. Backups (if any) are in: $BACKUP_DIR"
+if [[ "$MODE" == "sync" ]]; then
+  echo "Done. Repo backups (if any) are in: $REPO_BACKUP_DIR"
+else
+  echo "Done. Backups (if any) are in: $BACKUP_DIR"
+fi
 
