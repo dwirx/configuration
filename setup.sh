@@ -8,11 +8,22 @@ set -euo pipefail
 REPO_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
 BACKUP_DIR="$HOME/.dotfile-backups/$(date +%Y%m%d-%H%M%S)"
 FILES=(.zshrc .bashrc .vimrc)
+# Tambahan otomatis jika ada di repo atau di $HOME.
+COMMON_PATHS=(
+  .tmux.conf
+  .config/nvim
+  .config/nvim/init.vim
+)
 TARGETS=("$@")
 
-# Jika tidak ada argumen, pakai daftar default di atas.
+# Jika tidak ada argumen, pakai daftar default dan tambahkan path umum yang ditemukan.
 if [[ ${#TARGETS[@]} -eq 0 ]]; then
   TARGETS=("${FILES[@]}")
+  for p in "${COMMON_PATHS[@]}"; do
+    if [[ -e "$REPO_DIR/$p" || -e "$HOME/$p" ]]; then
+      TARGETS+=("$p")
+    fi
+  done
 fi
 
 mkdir -p "$BACKUP_DIR"
@@ -22,6 +33,11 @@ link_path() {
 
   # Hilangkan trailing slash agar symlink stabil untuk folder.
   path="${path%/}"
+
+  # Jika path absolut di dalam $HOME, ubah jadi relatif dari $HOME.
+  if [[ "$path" = "$HOME"* ]]; then
+    path="${path#"$HOME"/}"
+  fi
 
   if [[ -z "$path" ]]; then
     echo "Skip (path kosong)"
@@ -35,6 +51,13 @@ link_path() {
 
   local src="$REPO_DIR/$path"
   local dest="$HOME/$path"
+
+  # Jika file belum ada di repo tapi ada di $HOME, salin dulu ke repo agar ikut ter-versi.
+  if [[ ! -e "$src" && -e "$dest" ]]; then
+    mkdir -p "$(dirname "$src")"
+    cp -a "$dest" "$src"
+    echo "Copy $dest -> $src (repo)"
+  fi
 
   if [[ ! -e "$src" ]]; then
     echo "Skip $path (missing in repo)"

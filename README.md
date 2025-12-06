@@ -10,6 +10,7 @@ Repo ini bernama `configuration`, jadi gunakan skrip ini untuk menautkan berkas 
 2) Tanpa argumen, skrip akan:
    - Membuat symlink untuk `.zshrc`, `.bashrc`, dan `.vimrc` dari repo ini ke `$HOME`.
    - Memindahkan versi lama (jika ada) ke folder cadangan `~/.dotfile-backups/<timestamp>`.
+   - Otomatis menautkan `.tmux.conf` serta `~/.config/nvim` (atau `~/.config/nvim/init.vim`) jika ditemukan di repo atau di `$HOME`.
 3) Untuk menambahkan berkas lain (contoh konfigurasi Neovim), cukup jalankan:
    ```
    ./setup.sh .config/nvim/init.vim
@@ -20,5 +21,10 @@ Repo ini bernama `configuration`, jadi gunakan skrip ini untuk menautkan berkas 
    ./setup.sh .config/nvim
    ```
    Skrip akan memindahkan folder lama ke backup lalu membuat symlink ke folder di repo.
-5) Pastikan dependensi yang dirujuk di `.zshrc` terpasang (mis. Oh My Zsh, plugin `zsh-autosuggestions` dan `zsh-syntax-highlighting`, serta `fnm`/`bun` jika dipakai).
+5) Bisa pakai path absolut di dalam `$HOME` (akan dikonversi ke relatif), misal:
+   ```
+   ./setup.sh ~/.tmux.conf
+   ```
+   Jika file belum ada di repo tapi ada di `$HOME`, skrip akan menyalinnya ke repo terlebih dulu lalu membuat symlink.
+6) Pastikan dependensi yang dirujuk di `.zshrc` terpasang (mis. Oh My Zsh, plugin `zsh-autosuggestions` dan `zsh-syntax-highlighting`, serta `fnm`/`bun` jika dipakai).
 
