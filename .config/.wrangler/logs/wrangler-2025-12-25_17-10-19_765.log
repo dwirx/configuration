@@ -1,0 +1,127 @@
+
+--- 2025-12-25T17:10:20.727Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-25_17-10-19_765.log"
+---
+
+--- 2025-12-25T17:10:20.726Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766682620725,"properties":{"amplitude_session_id":1766682620719,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler d1 create","args":{}}}
+---
+
+--- 2025-12-25T17:10:20.763Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T17:10:20.763Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T17:10:20.873Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-25T17:10:20.980Z debug
+No folder available to cache configuration
+---
+
+--- 2025-12-25T17:10:20.983Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/memberships
+---
+
+--- 2025-12-25T17:10:20.983Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:20.985Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:20.985Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:20.986Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T17:10:22.883Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T17:10:22.885Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:22.886Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:22.886Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T17:10:22.902Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database
+---
+
+--- 2025-12-25T17:10:22.902Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:22.902Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:22.902Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:22.902Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T17:10:25.622Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T17:10:25.623Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:25.623Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:10:25.623Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T17:10:25.624Z log
+✅ Successfully created DB 'lexa-tempmail-dev' in region APAC
+---
+
+--- 2025-12-25T17:10:25.627Z log
+Created your new D1 database.
+
+---
+
+--- 2025-12-25T17:10:25.629Z log
+To access your new D1 Database in your Worker, add the following snippet to your configuration file:
+---
+
+--- 2025-12-25T17:10:25.631Z log
+{
+  "d1_databases": [
+    {
+      "binding": "lexa_tempmail_dev",
+      "database_name": "lexa-tempmail-dev",
+      "database_id": "dbfa8829-0c75-414c-9f2d-05d71d4ad053"
+    }
+  ]
+}
+---
+
+--- 2025-12-25T17:10:25.636Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766682625636,"properties":{"amplitude_session_id":1766682620719,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler d1 create","args":{},"durationMs":5040,"durationSeconds":5.04,"durationMinutes":0.084}}
+---

@@ -1,0 +1,62 @@
+
+--- 2025-12-24T06:42:12.264Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-24_06-42-11_391.log"
+---
+
+--- 2025-12-24T06:42:12.263Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766558532263,"properties":{"amplitude_session_id":1766558532257,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler login","args":{}}}
+---
+
+--- 2025-12-24T06:42:12.301Z debug
+.env file not found at "/home/hades/FUN/NotesProjeck/beta/vaultnotes/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-24T06:42:12.302Z debug
+.env file not found at "/home/hades/FUN/NotesProjeck/beta/vaultnotes/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-24T06:42:12.386Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.56.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-24T06:42:12.456Z log
+Attempting to login via OAuth...
+---
+
+--- 2025-12-24T06:42:12.562Z log
+Opening a link in your default browser: https://dash.cloudflare.com/oauth2/auth?response_type=code&client_id=54d11594-84e4-41aa-b438-e81b8fa78ee7&redirect_uri=http%3A%2F%2Flocalhost%3A8976%2Foauth%2Fcallback&scope=account%3Aread%20user%3Aread%20workers%3Awrite%20workers_kv%3Awrite%20workers_routes%3Awrite%20workers_scripts%3Awrite%20workers_tail%3Aread%20d1%3Awrite%20pages%3Awrite%20zone%3Aread%20ssl_certs%3Awrite%20ai%3Awrite%20queues%3Awrite%20pipelines%3Awrite%20secrets_store%3Awrite%20containers%3Awrite%20cloudchamber%3Awrite%20connectivity%3Aadmin%20offline_access&state=bTV4O1oX12j..exAf6SIWaHGLp_PokbC&code_challenge=sczkYGz6Le9g5knCIuiBajmDai1YLaoJ72hNECcFKKM&code_challenge_method=S256
+---
+
+--- 2025-12-24T06:42:27.760Z debug
+fetching auth token grant_type=authorization_code&code=OCvPZGPGFJMAF6bjDq0-ThvrYp27gslKcgKElIocQmk.9zqLmht_opguQlhbOParI7yCk-4u8RNlVcVky7oYkBg&redirect_uri=http%3A%2F%2Flocalhost%3A8976%2Foauth%2Fcallback&client_id=54d11594-84e4-41aa-b438-e81b8fa78ee7&code_verifier=VGFieC1nRlhKMk4zYXNoXzVESmZac3pDQ1RCVFZBLnI4SDMxNTBrVXpZaW03VjRSdTg2cEE4WWlNLVJSNF9MZjdQcy1rU1M0SzZCX1FIa3JQQ0lRS204c3BmZGgzLnda
+---
+
+--- 2025-12-24T06:42:27.761Z debug
+Checking if domain has Access enabled: dash.cloudflare.com
+---
+
+--- 2025-12-24T06:42:27.761Z debug
+Access switch not cached for: dash.cloudflare.com
+---
+
+--- 2025-12-24T06:42:28.004Z debug
+Caching access switch for: dash.cloudflare.com
+---
+
+--- 2025-12-24T06:42:28.005Z debug
+Fetching auth token from https://dash.cloudflare.com/oauth2/token
+---
+
+--- 2025-12-24T06:42:28.993Z log
+Successfully logged in.
+---
+
+--- 2025-12-24T06:42:29.001Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"login user","timestamp":1766558549001,"properties":{"category":"Workers","wranglerVersion":"4.53.0","os":"linux:x64"}}
+---
+
+--- 2025-12-24T06:42:29.015Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766558549015,"properties":{"amplitude_session_id":1766558532257,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler login","args":{},"durationMs":16872,"durationSeconds":16.872,"durationMinutes":0.2812}}
+---

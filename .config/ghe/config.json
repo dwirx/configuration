@@ -1,0 +1,268 @@
+{
+  "accounts": [
+    {
+      "name": "dwirx",
+      "gitUserName": "dwirx",
+      "gitEmail": "bangundwir@gmail.com",
+      "ssh": {
+        "keyPath": "/home/hades/.ssh/bangundwri",
+        "hostAlias": "github-dwirx"
+      },
+      "platform": {
+        "type": "github"
+      }
+    },
+    {
+      "name": "podsni",
+      "gitUserName": "podsni",
+      "gitEmail": "podsni0@gmail.com",
+      "ssh": {
+        "keyPath": "/home/hades/.ssh/podsni",
+        "hostAlias": "github-podsni"
+      },
+      "platform": {
+        "type": "github"
+      }
+    },
+    {
+      "name": "gitlabpodsni",
+      "gitUserName": "podsni",
+      "gitEmail": "podsni0@gmail.com",
+      "ssh": {
+        "keyPath": "/home/hades/.ssh/gitlabpodsni",
+        "hostAlias": "gitlab-gitlabpodsni"
+      },
+      "platform": {
+        "type": "gitlab"
+      }
+    },
+    {
+      "name": "giteapodsni",
+      "gitUserName": "podsni",
+      "gitEmail": "podsni@gmail.com",
+      "ssh": {
+        "keyPath": "/home/hades/.ssh/giteapodsni",
+        "hostAlias": "github-giteapodsni"
+      },
+      "platform": {
+        "type": "gitea",
+        "domain": "gitea.com"
+      }
+    },
+    {
+      "name": "codebergpodsni",
+      "gitUserName": "podsni",
+      "gitEmail": "podsni0@gmail.com",
+      "ssh": {
+        "keyPath": "/home/hades/.ssh/codeberg-podsni",
+        "hostAlias": "codeberg-codebergpodsni"
+      },
+      "platform": {
+        "type": "codeberg"
+      }
+    },
+    {
+      "name": "bitbutket-podsni",
+      "gitUserName": "podsni",
+      "gitEmail": "podsni0@gmail.com",
+      "ssh": {
+        "keyPath": "/home/hades/.ssh/bitbucket-podsni",
+        "hostAlias": "bitbucket-bitbutket-podsni"
+      },
+      "platform": {
+        "type": "bitbucket"
+      }
+    }
+  ],
+  "activityLog": [
+    {
+      "timestamp": "2025-12-15T18:11:23Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T18:20:04Z",
+      "action": "switch",
+      "accountName": "podsni",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T18:21:13Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T18:30:55Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T18:30:59Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T18:31:02Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T18:33:40Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T19:09:07Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T19:09:46Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T19:17:58Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-15T19:19:03Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T02:39:06Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T02:39:39Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T02:39:56Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T02:40:20Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T02:53:46Z",
+      "action": "switch",
+      "accountName": "codebergpodsni",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "codeberg",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T02:53:51Z",
+      "action": "switch",
+      "accountName": "codebergpodsni",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "codeberg",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T02:56:54Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T03:12:03Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T03:12:33Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    },
+    {
+      "timestamp": "2025-12-17T03:12:49Z",
+      "action": "switch",
+      "accountName": "dwirx",
+      "repoPath": "dwirx/ghex",
+      "method": "ssh",
+      "platform": "github",
+      "success": true
+    }
+  ]
+}

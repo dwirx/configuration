@@ -1,0 +1,403 @@
+
+--- 2025-12-26T06:34:53.126Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-26_06-34-52_289.log"
+---
+
+--- 2025-12-26T06:34:53.125Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766730893125,"properties":{"amplitude_session_id":1766730893118,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages deploy","args":{}}}
+---
+
+--- 2025-12-26T06:34:53.168Z debug
+.env file not found at "/home/hades/FUN/tempmail/vaultnotes-beta/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-26T06:34:53.249Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-26T06:34:53.336Z debug
+Retrieving cached values for account_id and project_name from node_modules/.cache/wrangler
+---
+
+--- 2025-12-26T06:34:53.340Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/leafvault-notes
+---
+
+--- 2025-12-26T06:34:53.341Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:53.342Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:53.342Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:53.342Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:34:55.184Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:34:55.186Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:55.186Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:55.186Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:34:55.284Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/leafvault-notes
+---
+
+--- 2025-12-26T06:34:55.284Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:55.284Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:55.284Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:55.284Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:34:57.031Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:34:57.031Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:57.032Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:57.032Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:34:57.114Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/leafvault-notes/upload-token
+---
+
+--- 2025-12-26T06:34:57.114Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:57.114Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:57.114Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:57.115Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:34:58.555Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:34:58.557Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.557Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.557Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:34:58.560Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/pages/assets/check-missing
+---
+
+--- 2025-12-26T06:34:58.560Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.560Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.560Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.560Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:34:58.934Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:34:58.935Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.935Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.935Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:34:58.947Z debug
+POST /pages/assets/upload
+---
+
+--- 2025-12-26T06:34:58.948Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/pages/assets/upload
+---
+
+--- 2025-12-26T06:34:58.948Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.948Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.948Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.948Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:34:58.959Z debug
+POST /pages/assets/upload
+---
+
+--- 2025-12-26T06:34:58.981Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/pages/assets/upload
+---
+
+--- 2025-12-26T06:34:58.981Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.981Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.998Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:58.998Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:34:59.712Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:34:59.713Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:59.713Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:34:59.713Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:34:59.715Z debug
+result: { successful_key_count: 1, unsuccessful_keys: [] }
+---
+
+--- 2025-12-26T06:35:08.640Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:35:08.641Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:08.641Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:08.641Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:35:08.641Z debug
+result: { successful_key_count: 1, unsuccessful_keys: [] }
+---
+
+--- 2025-12-26T06:35:08.643Z log
+✨ Success! Uploaded 2 files (37 already uploaded) (10.09 sec)
+
+---
+
+--- 2025-12-26T06:35:08.645Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/pages/assets/upsert-hashes
+---
+
+--- 2025-12-26T06:35:08.645Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:08.645Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:08.645Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:08.645Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:35:09.169Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:35:09.171Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:09.171Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:09.171Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:35:09.176Z log
+✨ Uploading _headers
+---
+
+--- 2025-12-26T06:35:09.177Z log
+✨ Uploading _redirects
+---
+
+--- 2025-12-26T06:35:09.179Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/leafvault-notes/deployments
+---
+
+--- 2025-12-26T06:35:09.179Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:09.179Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:09.179Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:09.196Z debug
+BODY: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:09.196Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:35:11.558Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:35:11.559Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:11.559Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:11.559Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:35:11.561Z debug
+Saving to cache: {"account_id":"f006ec5b85550c77e565a3f9f99a35c0","project_name":"leafvault-notes"}
+---
+
+--- 2025-12-26T06:35:11.562Z log
+🌎 Deploying...
+---
+
+--- 2025-12-26T06:35:12.564Z debug
+attempt #1: Attempting to fetch status for deployment with id "8fa0ab50-12c8-4f21-a741-19fab0a929c6" ...
+---
+
+--- 2025-12-26T06:35:12.565Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/leafvault-notes/deployments/8fa0ab50-12c8-4f21-a741-19fab0a929c6
+---
+
+--- 2025-12-26T06:35:12.565Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:12.565Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:12.565Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:12.565Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:35:14.433Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:35:14.434Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:14.434Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:35:14.434Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:35:14.436Z log
+✨ Deployment complete! Take a peek over at https://8fa0ab50.leafvault-notes.pages.dev
+---
+
+--- 2025-12-26T06:35:14.439Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"create pages deployment","timestamp":1766730914439,"properties":{"category":"Workers","wranglerVersion":"4.53.0","os":"linux:x64"}}
+---
+
+--- 2025-12-26T06:35:14.446Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766730914445,"properties":{"amplitude_session_id":1766730893118,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages deploy","args":{},"durationMs":21449,"durationSeconds":21.449,"durationMinutes":0.3574833333333334}}
+---

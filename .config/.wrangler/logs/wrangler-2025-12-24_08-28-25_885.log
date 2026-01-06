@@ -1,0 +1,45 @@
+
+--- 2025-12-24T08:28:26.279Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-24_08-28-25_885.log"
+---
+
+--- 2025-12-24T08:28:26.279Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766564906278,"properties":{"amplitude_session_id":1766564906273,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{}}}
+---
+
+--- 2025-12-24T08:28:26.295Z debug
+.env file not found at "/home/hades/FUN/NotesProjeck/beta/vaultnotes/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-24T08:28:26.337Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.56.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-24T08:28:26.339Z log
+Resource location: remote 
+
+---
+
+--- 2025-12-24T08:28:26.374Z log
+
+---
+
+--- 2025-12-24T08:28:26.583Z error
+✘ [ERROR] Unable to read SQL text file "migrations/0002_admin_settings.sql". Please check the file path and try again.
+
+
+---
+
+--- 2025-12-24T08:28:26.584Z debug
+Error: Unable to read SQL text file "migrations/0002_admin_settings.sql". Please check the file path and try again.
+    at checkForSQLiteBinary (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165850:11)
+    at async executeSql (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165545:5)
+    at async Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165961:28)
+    at async Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165176:7)
+---
+
+--- 2025-12-24T08:28:26.586Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1766564906585,"properties":{"amplitude_session_id":1766564906273,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{},"durationMs":372,"durationSeconds":0.372,"durationMinutes":0.0062,"errorType":"UserError"}}
+---

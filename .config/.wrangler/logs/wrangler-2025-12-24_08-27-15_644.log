@@ -1,0 +1,472 @@
+
+--- 2025-12-24T08:27:16.061Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-24_08-27-15_644.log"
+---
+
+--- 2025-12-24T08:27:16.061Z log
+
+Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+---
+
+--- 2025-12-24T08:27:16.076Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766564836075,"properties":{"amplitude_session_id":1766564836058,"amplitude_event_id":0,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["config"],"argsCombination":"config","command":"wrangler deploy","args":{}}}
+---
+
+--- 2025-12-24T08:27:16.107Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-24T08:27:16.209Z log
+
+ ⛅️ wrangler 3.114.16 (update available 4.56.0)
+---------------------------------------------------------
+
+---
+
+--- 2025-12-24T08:27:16.430Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical
+  errors.
+  Run `npm install --save-dev wrangler@4` to update to the
+  latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2025-12-24T08:27:16.563Z debug
+Retrieving cached values for account from node_modules/.cache/wrangler
+---
+
+--- 2025-12-24T08:27:16.564Z debug
+Starting verifyWorkerMatchesCITag() with tag: undefined, name: leafvault-api
+---
+
+--- 2025-12-24T08:27:16.564Z debug
+No WRANGLER_CI_MATCH_TAG variable provided, aborting verifyWorkerMatchesCITag()
+---
+
+--- 2025-12-24T08:27:16.570Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/services/leafvault-api
+---
+
+--- 2025-12-24T08:27:16.570Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:16.570Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:16.571Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:18.749Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:18.752Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:18.752Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:18.752Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:18.768Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/deployments
+---
+
+--- 2025-12-24T08:27:18.768Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:18.769Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:18.769Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:20.316Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:20.317Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:20.317Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:20.317Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:20.473Z log
+Total Upload: 75.99 KiB / gzip: 17.71 KiB
+---
+
+--- 2025-12-24T08:27:20.493Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/versions
+---
+
+--- 2025-12-24T08:27:20.493Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:20.493Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:20.510Z debug
+BODY: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:20.510Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:24.204Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:24.204Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:24.204Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:24.204Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:24.207Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/deployments
+---
+
+--- 2025-12-24T08:27:24.207Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:24.207Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:24.207Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:25.910Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:25.910Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:25.910Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:25.910Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:25.911Z debug
+-- START CF API REQUEST: PATCH https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/script-settings
+---
+
+--- 2025-12-24T08:27:25.911Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:25.911Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:25.911Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:27.732Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:27.733Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:27.733Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:27.733Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:27.741Z log
+Your worker has access to the following bindings:
+- D1 Databases:
+  - DB: leafvault-db (3b15207f-68c2-49d0-998e-d8344047d796)
+- Vars:
+  - ALLOWED_ORIGINS: "https://notes.lexa.my.id,https://leaf..."
+---
+
+--- 2025-12-24T08:27:27.754Z log
+Uploaded leafvault-api (8.99 sec)
+---
+
+--- 2025-12-24T08:27:27.758Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/subdomain
+---
+
+--- 2025-12-24T08:27:27.758Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:27.758Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:27.758Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:29.491Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:29.491Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:29.492Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:29.492Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:29.493Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/subdomain
+---
+
+--- 2025-12-24T08:27:29.493Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:29.493Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:29.493Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:31.368Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:31.369Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:31.369Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:31.369Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:31.379Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/zones?name=leafvault-api.lexa.my.id&account.id=f006ec5b85550c77e565a3f9f99a35c0
+---
+
+--- 2025-12-24T08:27:31.380Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:31.380Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:31.380Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:32.508Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:32.508Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:32.508Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:32.508Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:32.510Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/zones?name=lexa.my.id&account.id=f006ec5b85550c77e565a3f9f99a35c0
+---
+
+--- 2025-12-24T08:27:32.510Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:32.510Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:32.510Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:33.510Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:33.511Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:33.511Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:33.511Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:33.513Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/zones/3135039f210c2bf30cd0fec4c5397c78/workers/routes
+---
+
+--- 2025-12-24T08:27:33.513Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:33.513Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:33.513Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:35.183Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:35.183Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:35.183Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:35.183Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:35.184Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/domains/changeset?replace_state=true
+---
+
+--- 2025-12-24T08:27:35.184Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:35.184Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:35.184Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:36.894Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:36.894Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:36.894Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:36.894Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:36.896Z debug
+-- START CF API REQUEST: PUT https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/domains/records
+---
+
+--- 2025-12-24T08:27:36.896Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:36.896Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:36.896Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:27:38.737Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:27:38.738Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:38.738Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:27:38.738Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:27:38.739Z log
+Deployed leafvault-api triggers (9.25 sec)
+---
+
+--- 2025-12-24T08:27:38.739Z log
+  leafvault-api.lexa.my.id (custom domain)
+---
+
+--- 2025-12-24T08:27:38.740Z log
+Current Version ID: 488a8124-2794-496c-b17c-f4fc3cab31fa
+---
+
+--- 2025-12-24T08:27:38.743Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"deploy worker script","timestamp":1766564858743,"properties":{"category":"Workers","wranglerVersion":"3.114.16","os":"linux:x64","usesTypeScript":true,"durationMs":22178}}
+---
+
+--- 2025-12-24T08:27:38.754Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766564858754,"properties":{"amplitude_session_id":1766564836058,"amplitude_event_id":1,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["config"],"argsCombination":"config","command":"wrangler deploy","args":{},"durationMs":22774,"durationSeconds":22.774,"durationMinutes":0.37956666666666666}}
+---

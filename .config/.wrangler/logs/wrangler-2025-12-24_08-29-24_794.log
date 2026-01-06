@@ -1,0 +1,49 @@
+
+--- 2025-12-24T08:29:25.643Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-24_08-29-24_794.log"
+---
+
+--- 2025-12-24T08:29:25.643Z log
+
+Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+---
+
+--- 2025-12-24T08:29:25.658Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766564965658,"properties":{"amplitude_session_id":1766564965640,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler deploy","args":{}}}
+---
+
+--- 2025-12-24T08:29:25.693Z debug
+.env file not found at "/home/hades/FUN/NotesProjeck/beta/vaultnotes/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-24T08:29:25.777Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.56.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-24T08:29:25.855Z log
+
+---
+
+--- 2025-12-24T08:29:26.047Z error
+✘ [ERROR] The entry-point file at "src/index.ts" was not found.
+
+
+---
+
+--- 2025-12-24T08:29:26.048Z debug
+Error: The entry-point file at "src/index.ts" was not found.
+    at assertEntryPointExists (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:125328:11)
+    at runCustomBuild (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:125319:5)
+    at getEntry (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:212078:9)
+    at Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:212617:29)
+    at /home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165194:20
+    at AsyncLocalStorage.run (node:internal/async_local_storage/async_hooks:91:14)
+    at run (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:48005:61)
+    at Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165176:13)
+---
+
+--- 2025-12-24T08:29:26.052Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1766564966051,"properties":{"amplitude_session_id":1766564965640,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler deploy","args":{},"durationMs":545,"durationSeconds":0.545,"durationMinutes":0.009083333333333334,"errorType":"UserError"}}
+---

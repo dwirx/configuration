@@ -1,0 +1,94 @@
+
+--- 2025-12-25T18:53:43.603Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-25_18-53-42_269.log"
+---
+
+--- 2025-12-25T18:53:43.603Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766688823602,"properties":{"amplitude_session_id":1766688823590,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler secret put","args":{}}}
+---
+
+--- 2025-12-25T18:53:43.641Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T18:53:43.642Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T18:53:54.906Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-25T18:53:54.997Z debug
+fetching auth token grant_type=refresh_token&refresh_token=lDJpeOLeShdlJDnUHhkw1OPnXAOblfvR6_WRaPV-d8M.soJa73R9I4WxRF2D-XtHt1TWm8-JjXYLaBfBKl_kjKA&client_id=54d11594-84e4-41aa-b438-e81b8fa78ee7
+---
+
+--- 2025-12-25T18:53:54.998Z debug
+Checking if domain has Access enabled: dash.cloudflare.com
+---
+
+--- 2025-12-25T18:53:54.998Z debug
+Access switch not cached for: dash.cloudflare.com
+---
+
+--- 2025-12-25T18:53:55.216Z debug
+Caching access switch for: dash.cloudflare.com
+---
+
+--- 2025-12-25T18:53:55.217Z debug
+Fetching auth token from https://dash.cloudflare.com/oauth2/token
+---
+
+--- 2025-12-25T18:53:56.159Z log
+🌀 Creating the secret for the Worker "cloudflare_temp_email" 
+---
+
+--- 2025-12-25T18:53:56.163Z debug
+-- START CF API REQUEST: PUT https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/secrets
+---
+
+--- 2025-12-25T18:53:56.163Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:53:56.164Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:53:56.164Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:53:56.164Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:53:58.226Z debug
+-- START CF API RESPONSE: Created 201
+---
+
+--- 2025-12-25T18:53:58.228Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:53:58.228Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:53:58.228Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:53:58.256Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"create encrypted variable","timestamp":1766688838256,"properties":{"category":"Workers","wranglerVersion":"4.53.0","os":"linux:x64"}}
+---
+
+--- 2025-12-25T18:53:58.269Z log
+✨ Success! Uploaded secret TELEGRAM_BOT_TOKEN
+---
+
+--- 2025-12-25T18:53:58.289Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766688838289,"properties":{"amplitude_session_id":1766688823590,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler secret put","args":{},"durationMs":14934,"durationSeconds":14.934,"durationMinutes":0.24889999999999998}}
+---

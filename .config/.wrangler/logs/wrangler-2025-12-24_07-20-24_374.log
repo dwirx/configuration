@@ -1,0 +1,22 @@
+
+--- 2025-12-24T07:20:25.245Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-24_07-20-24_374.log"
+---
+
+--- 2025-12-24T07:20:25.245Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766560825244,"properties":{"amplitude_session_id":1766560825238,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages project add-domain leafvault-app notes.lexa.my.id","args":{}}}
+---
+
+--- 2025-12-24T07:20:25.281Z log
+
+---
+
+--- 2025-12-24T07:20:25.491Z error
+✘ [ERROR] Unknown arguments: add-domain, leafvault-app, notes.lexa.my.id
+
+
+---
+
+--- 2025-12-24T07:20:25.599Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1766560825598,"properties":{"amplitude_session_id":1766560825238,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages project add-domain leafvault-app notes.lexa.my.id","args":{},"durationMs":471,"durationSeconds":0.471,"durationMinutes":0.00785,"errorType":"CommandLineArgsError","errorMessage":"yargs validation error"}}
+---

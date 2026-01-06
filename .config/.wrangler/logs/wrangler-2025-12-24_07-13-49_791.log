@@ -1,0 +1,80 @@
+
+--- 2025-12-24T07:13:50.442Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-24_07-13-49_791.log"
+---
+
+--- 2025-12-24T07:13:50.442Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766560430441,"properties":{"amplitude_session_id":1766560430436,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages deployment list","args":{}}}
+---
+
+--- 2025-12-24T07:13:50.477Z debug
+.env file not found at "/home/hades/FUN/NotesProjeck/beta/vaultnotes/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-24T07:13:50.567Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.56.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-24T07:13:50.624Z debug
+Retrieving cached values for account_id and project_name from node_modules/.cache/wrangler
+---
+
+--- 2025-12-24T07:13:50.627Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/leafvault-notes/deployments
+---
+
+--- 2025-12-24T07:13:50.628Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:13:50.630Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:13:50.631Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:13:50.632Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T07:13:52.494Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T07:13:52.495Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:13:52.495Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:13:52.495Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T07:13:52.509Z debug
+Saving to cache: {"account_id":"f006ec5b85550c77e565a3f9f99a35c0"}
+---
+
+--- 2025-12-24T07:13:52.541Z log
+┌──────────────────────────────────────┬─────────────┬────────┬─────────┬────────────────────────────────────────────┬───────────────┬──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┐
+│ Id                                   │ Environment │ Branch │ Source  │ Deployment                                 │ Status        │ Build                                                                                                                        │
+├──────────────────────────────────────┼─────────────┼────────┼─────────┼────────────────────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 8c2861f7-4d99-4ace-8738-2a05e564e2fd │ Preview     │ main   │ fd63ea7 │ https://8c2861f7.leafvault-notes.pages.dev │ 1 minute ago  │ https://dash.cloudflare.com/f006ec5b85550c77e565a3f9f99a35c0/pages/view/leafvault-notes/8c2861f7-4d99-4ace-8738-2a05e564e2fd │
+├──────────────────────────────────────┼─────────────┼────────┼─────────┼────────────────────────────────────────────┼───────────────┼──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┤
+│ 4bb6c1da-8e7d-4fb4-aff8-1e751b8938bf │ Preview     │ main   │ fd63ea7 │ https://4bb6c1da.leafvault-notes.pages.dev │ 8 minutes ago │ https://dash.cloudflare.com/f006ec5b85550c77e565a3f9f99a35c0/pages/view/leafvault-notes/4bb6c1da-8e7d-4fb4-aff8-1e751b8938bf │
+└──────────────────────────────────────┴─────────────┴────────┴─────────┴────────────────────────────────────────────┴───────────────┴──────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────────┘
+---
+
+--- 2025-12-24T07:13:52.543Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"list pages deployments","timestamp":1766560432542,"properties":{"category":"Workers","wranglerVersion":"4.53.0","os":"linux:x64"}}
+---
+
+--- 2025-12-24T07:13:52.556Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766560432556,"properties":{"amplitude_session_id":1766560430436,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages deployment list","args":{},"durationMs":2218,"durationSeconds":2.218,"durationMinutes":0.03696666666666667}}
+---

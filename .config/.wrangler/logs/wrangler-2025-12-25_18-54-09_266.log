@@ -1,0 +1,30 @@
+
+--- 2025-12-25T18:54:10.349Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-25_18-54-09_266.log"
+---
+
+--- 2025-12-25T18:54:10.348Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766688850348,"properties":{"amplitude_session_id":1766688850342,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler kv:namespace create KV","args":{}}}
+---
+
+--- 2025-12-25T18:54:10.386Z log
+
+---
+
+--- 2025-12-25T18:54:10.705Z error
+✘ [ERROR] Unknown arguments: kv:namespace, create, KV
+
+
+---
+
+--- 2025-12-25T18:54:10.765Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T18:54:10.765Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T18:54:10.874Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1766688850874,"properties":{"amplitude_session_id":1766688850342,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler kv:namespace create KV","args":{},"durationMs":692,"durationSeconds":0.692,"durationMinutes":0.011533333333333333,"errorType":"CommandLineArgsError","errorMessage":"yargs validation error"}}
+---

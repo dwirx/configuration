@@ -73,3 +73,13 @@ fi
 # bun
 export BUN_INSTALL="$HOME/.bun"
 export PATH="$BUN_INSTALL/bin:$PATH"
+
+. "$HOME/.local/bin/env"
+# Tambahkan Go ke PATH
+export PATH=$PATH:/usr/local/go/bin
+export GOPATH=$HOME/go
+export PATH=$PATH:$GOPATH/bin
+
+# opencode
+export PATH=/home/hades/.opencode/bin:$PATH
+export PATH="$HOME/bin:$PATH"

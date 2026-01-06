@@ -1,0 +1,22 @@
+
+--- 2025-12-06T03:15:11.520Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-06_03-15-11_148.log"
+---
+
+--- 2025-12-06T03:15:11.519Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1764990911518,"properties":{"amplitude_session_id":1764990911509,"amplitude_event_id":0,"wranglerVersion":"3.114.15","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler triggers list","args":{"xJsonConfig":true,"j":true}}}
+---
+
+--- 2025-12-06T03:15:11.558Z log
+
+---
+
+--- 2025-12-06T03:15:11.821Z error
+✘ [ERROR] Unknown argument: list
+
+
+---
+
+--- 2025-12-06T03:15:11.948Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1764990911948,"properties":{"amplitude_session_id":1764990911509,"amplitude_event_id":1,"wranglerVersion":"3.114.15","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler triggers list","args":{"xJsonConfig":true,"j":true},"durationMs":514,"durationSeconds":0.514,"durationMinutes":0.008566666666666667,"errorType":"CommandLineArgsError","errorMessage":"yargs validation error"}}
+---

@@ -1,0 +1,211 @@
+
+--- 2025-12-25T17:12:12.000Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-25_17-12-11_376.log"
+---
+
+--- 2025-12-25T17:12:12.000Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766682731999,"properties":{"amplitude_session_id":1766682731992,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{}}}
+---
+
+--- 2025-12-25T17:12:12.038Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T17:12:12.039Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T17:12:12.171Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-25T17:12:12.176Z log
+Resource location: remote 
+
+---
+
+--- 2025-12-25T17:12:14.559Z debug
+No folder available to cache configuration
+---
+
+--- 2025-12-25T17:12:14.566Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/memberships
+---
+
+--- 2025-12-25T17:12:14.567Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:14.568Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:14.568Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:14.568Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T17:12:16.274Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T17:12:16.276Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.276Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.277Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T17:12:16.301Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database
+---
+
+--- 2025-12-25T17:12:16.301Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.302Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.302Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.302Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T17:12:16.840Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T17:12:16.841Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.841Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.841Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T17:12:16.843Z log
+🌀 Executing on remote database lexa-tempmail-dev (dbfa8829-0c75-414c-9f2d-05d71d4ad053):
+---
+
+--- 2025-12-25T17:12:16.843Z log
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+---
+
+--- 2025-12-25T17:12:16.853Z log
+Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+---
+
+--- 2025-12-25T17:12:16.856Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database/dbfa8829-0c75-414c-9f2d-05d71d4ad053/import
+---
+
+--- 2025-12-25T17:12:16.856Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.856Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.856Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:16.856Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T17:12:18.054Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T17:12:18.055Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:18.055Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:18.055Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T17:12:19.058Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database/dbfa8829-0c75-414c-9f2d-05d71d4ad053/import
+---
+
+--- 2025-12-25T17:12:19.058Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:19.058Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:19.058Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:19.058Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T17:12:20.223Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T17:12:20.224Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:20.224Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T17:12:20.224Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T17:12:20.232Z log
+
+---
+
+--- 2025-12-25T17:12:20.497Z error
+✘ [ERROR] duplicate column name: updated_at: SQLITE_ERROR
+
+
+---
+
+--- 2025-12-25T17:12:20.498Z debug
+Error: duplicate column name: updated_at: SQLITE_ERROR
+    at pollUntilComplete (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165783:11)
+    at executeRemotely (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165695:33)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async executeSql (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165547:38)
+    at async Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165961:28)
+    at async Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165176:7)
+---
+
+--- 2025-12-25T17:12:20.501Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1766682740501,"properties":{"amplitude_session_id":1766682731992,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{},"durationMs":8637,"durationSeconds":8.637,"durationMinutes":0.14395,"errorType":"UserError"}}
+---

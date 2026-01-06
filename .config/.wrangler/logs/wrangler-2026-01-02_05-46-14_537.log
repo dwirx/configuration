@@ -1,0 +1,44 @@
+
+--- 2026-01-02T05:46:15.610Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2026-01-02_05-46-14_537.log"
+---
+
+--- 2026-01-02T05:46:15.609Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1767332775609,"properties":{"amplitude_session_id":1767332775600,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler d1 execute","args":{}}}
+---
+
+--- 2026-01-02T05:46:15.692Z debug
+.env file not found at "/home/hades/FUN/cloudflareProjet/passvault/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T05:46:15.850Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2026-01-02T05:46:15.855Z log
+Resource location: local 
+
+---
+
+--- 2026-01-02T05:46:15.856Z log
+Use --remote if you want to access the remote instance.
+
+---
+
+--- 2026-01-02T05:46:16.032Z log
+🌀 Executing on local database passvault-db (ed03d8fe-6a25-4682-9406-2f3410ebc417) from .wrangler/state/v3/d1:
+---
+
+--- 2026-01-02T05:46:16.033Z log
+🌀 To execute on your remote database, add a --remote flag to your wrangler command.
+---
+
+--- 2026-01-02T05:46:37.942Z log
+🚣 29 commands executed successfully.
+---
+
+--- 2026-01-02T05:46:37.947Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1767332797947,"properties":{"amplitude_session_id":1767332775600,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler d1 execute","args":{},"durationMs":22568,"durationSeconds":22.568,"durationMinutes":0.3761333333333334}}
+---

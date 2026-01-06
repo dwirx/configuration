@@ -1,0 +1,126 @@
+
+--- 2026-01-02T06:01:56.477Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2026-01-02_06-01-55_541.log"
+---
+
+--- 2026-01-02T06:01:56.477Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1767333716476,"properties":{"amplitude_session_id":1767333716469,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{}}}
+---
+
+--- 2026-01-02T06:01:56.520Z debug
+.env file not found at "/home/hades/FUN/cloudflareProjet/passvault/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T06:01:56.641Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2026-01-02T06:01:56.648Z log
+Resource location: remote 
+
+---
+
+--- 2026-01-02T06:01:56.733Z debug
+Retrieving cached values for account from node_modules/.cache/wrangler
+---
+
+--- 2026-01-02T06:01:56.736Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database
+---
+
+--- 2026-01-02T06:01:56.736Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:56.738Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:56.738Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:56.738Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:01:58.231Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:01:58.233Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:58.234Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:58.234Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:01:58.244Z log
+🌀 Executing on remote database passvault-db (ed03d8fe-6a25-4682-9406-2f3410ebc417):
+---
+
+--- 2026-01-02T06:01:58.245Z log
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+---
+
+--- 2026-01-02T06:01:58.248Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database/ed03d8fe-6a25-4682-9406-2f3410ebc417/query
+---
+
+--- 2026-01-02T06:01:58.248Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:58.249Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:58.257Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:58.260Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:01:59.146Z debug
+-- START CF API RESPONSE: Bad Request 400
+---
+
+--- 2026-01-02T06:01:59.147Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:59.149Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:01:59.149Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:01:59.157Z log
+
+---
+
+--- 2026-01-02T06:01:59.429Z error
+✘ [ERROR] A request to the Cloudflare API (/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database/ed03d8fe-6a25-4682-9406-2f3410ebc417/query) failed.
+
+  table users has no column named display_name: SQLITE_ERROR [code: 7500]
+  
+  If you think this is a bug, please open an issue at:
+  https://github.com/cloudflare/workers-sdk/issues/new/choose
+
+
+---
+
+--- 2026-01-02T06:01:59.431Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1767333719431,"properties":{"amplitude_session_id":1767333716469,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{},"durationMs":3109,"durationSeconds":3.109,"durationMinutes":0.051816666666666664,"errorType":"APIError"}}
+---

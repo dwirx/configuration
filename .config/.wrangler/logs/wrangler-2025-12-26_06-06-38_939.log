@@ -1,0 +1,142 @@
+
+--- 2025-12-26T06:06:39.273Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-26_06-06-38_939.log"
+---
+
+--- 2025-12-26T06:06:39.272Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766729199272,"properties":{"amplitude_session_id":1766729199267,"amplitude_event_id":0,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{}}}
+---
+
+--- 2025-12-26T06:06:39.302Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-26T06:06:39.381Z log
+
+ ⛅️ wrangler 3.114.16 (update available 4.54.0)
+---------------------------------------------------------
+
+---
+
+--- 2025-12-26T06:06:39.567Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2025-12-26T06:06:39.581Z debug
+No experimental flag store instantiated
+---
+
+--- 2025-12-26T06:06:39.581Z debug
+Attempted to use flag "RESOURCES_PROVISION" which has not been instantiated
+---
+
+--- 2025-12-26T06:06:52.233Z debug
+Retrieving cached values for account from node_modules/.cache/wrangler
+---
+
+--- 2025-12-26T06:06:52.234Z log
+🌀 Executing on remote database leafvault-db (3b15207f-68c2-49d0-998e-d8344047d796):
+---
+
+--- 2025-12-26T06:06:52.240Z log
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+---
+
+--- 2025-12-26T06:06:52.258Z log
+Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+---
+
+--- 2025-12-26T06:06:52.261Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database/3b15207f-68c2-49d0-998e-d8344047d796/import
+---
+
+--- 2025-12-26T06:06:52.262Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:06:52.262Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:06:52.262Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:06:53.398Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:06:53.401Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:06:53.401Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:06:53.401Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:06:54.416Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database/3b15207f-68c2-49d0-998e-d8344047d796/import
+---
+
+--- 2025-12-26T06:06:54.416Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:06:54.417Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:06:54.417Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T06:06:56.407Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T06:06:56.407Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:06:56.407Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T06:06:56.407Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T06:06:56.409Z log
+🌀 Starting import...
+---
+
+--- 2025-12-26T06:06:56.410Z log
+🌀 Processed 2 queries.
+---
+
+--- 2025-12-26T06:06:56.410Z log
+🚣 Executed 2 queries in 2.52ms (40 rows read, 2 rows written)
+   Database is currently at bookmark 00000040-00000006-00004fe0-6c2600f9a7fa941f30ca309de124e213.
+---
+
+--- 2025-12-26T06:06:56.442Z log
+┌────────────────────────┬───────────┬──────────────┬────────────────────┐
+│ Total queries executed │ Rows read │ Rows written │ Database size (MB) │
+├────────────────────────┼───────────┼──────────────┼────────────────────┤
+│ 2                      │ 40        │ 2            │ 0.10               │
+└────────────────────────┴───────────┴──────────────┴────────────────────┘
+---
+
+--- 2025-12-26T06:06:56.446Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766729216446,"properties":{"amplitude_session_id":1766729199267,"amplitude_event_id":1,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{},"durationMs":17251,"durationSeconds":17.251,"durationMinutes":0.2875166666666667}}
+---

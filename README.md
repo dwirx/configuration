@@ -30,5 +30,10 @@ Repo ini bernama `configuration`, jadi gunakan skrip ini untuk menautkan berkas 
    ```
    ./setup.sh --create-missing .config/nvim
    ```
-7) Pastikan dependensi yang dirujuk di `.zshrc` terpasang (mis. Oh My Zsh, plugin `zsh-autosuggestions` dan `zsh-syntax-highlighting`, serta `fnm`/`bun` jika dipakai).
+7) Untuk auto-link semua kandidat di repo (kecuali yang di-skip seperti `README.md`, `setup.sh`, `.git`), jalankan:
+   ```
+   ./setup.sh --auto
+   ```
+   Cocok saat ada folder/berkas baru di repo (mis. `.config/arema` atau `./config/arema`); skrip akan menautkannya ke `$HOME/<path>`.
+8) Pastikan dependensi yang dirujuk di `.zshrc` terpasang (mis. Oh My Zsh, plugin `zsh-autosuggestions` dan `zsh-syntax-highlighting`, serta `fnm`/`bun` jika dipakai).
 

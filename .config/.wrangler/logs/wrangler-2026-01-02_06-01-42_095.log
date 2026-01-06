@@ -1,0 +1,50 @@
+
+--- 2026-01-02T06:01:43.074Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2026-01-02_06-01-42_095.log"
+---
+
+--- 2026-01-02T06:01:43.074Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1767333703073,"properties":{"amplitude_session_id":1767333703068,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":["local"],"argsCombination":"local","command":"wrangler d1 execute","args":{}}}
+---
+
+--- 2026-01-02T06:01:43.110Z debug
+.env file not found at "/home/hades/FUN/cloudflareProjet/passvault/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T06:01:43.186Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2026-01-02T06:01:43.190Z log
+Resource location: local 
+
+---
+
+--- 2026-01-02T06:01:43.190Z log
+Use --remote if you want to access the remote instance.
+
+---
+
+--- 2026-01-02T06:01:43.278Z log
+
+---
+
+--- 2026-01-02T06:01:43.522Z error
+✘ [ERROR] Couldn't find a D1 DB with the name or binding 'passvault-db' in your wrangler.toml file.
+
+
+---
+
+--- 2026-01-02T06:01:43.522Z debug
+Error: Couldn't find a D1 DB with the name or binding 'passvault-db' in your wrangler.toml file.
+    at executeLocally (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165572:11)
+    at executeSql (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165553:14)
+    at async Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165961:28)
+    at async Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165176:7)
+---
+
+--- 2026-01-02T06:01:43.525Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1767333703525,"properties":{"amplitude_session_id":1767333703068,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":["local"],"argsCombination":"local","command":"wrangler d1 execute","args":{},"durationMs":580,"durationSeconds":0.58,"durationMinutes":0.009666666666666665,"errorType":"UserError"}}
+---

@@ -1,0 +1,177 @@
+
+--- 2025-12-24T08:47:06.920Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-24_08-47-06_168.log"
+---
+
+--- 2025-12-24T08:47:06.920Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766566026919,"properties":{"amplitude_session_id":1766566026912,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{}}}
+---
+
+--- 2025-12-24T08:47:06.962Z debug
+.env file not found at "/home/hades/FUN/NotesProjeck/beta/vaultnotes/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-24T08:47:07.062Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.56.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-24T08:47:07.067Z log
+Resource location: remote 
+
+---
+
+--- 2025-12-24T08:47:07.161Z log
+? ⚠️ This process may take some time, during which your D1 database will be unavailable to serve queries.
+  Ok to proceed?
+---
+
+--- 2025-12-24T08:47:07.162Z log
+🤖 Using fallback value in non-interactive context: yes
+---
+
+--- 2025-12-24T08:47:07.169Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database
+---
+
+--- 2025-12-24T08:47:07.170Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:07.173Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:07.174Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:07.174Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:47:08.835Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:47:08.840Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:08.840Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:08.840Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:47:08.847Z log
+🌀 Executing on remote database leafvault-db (3b15207f-68c2-49d0-998e-d8344047d796):
+---
+
+--- 2025-12-24T08:47:08.848Z log
+🌀 To execute on your local development database, remove the --remote flag from your wrangler command.
+---
+
+--- 2025-12-24T08:47:08.861Z log
+Note: if the execution fails to complete, your DB will return to its original state and you can safely retry.
+---
+
+--- 2025-12-24T08:47:08.866Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database/3b15207f-68c2-49d0-998e-d8344047d796/import
+---
+
+--- 2025-12-24T08:47:08.866Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:08.867Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:08.867Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:08.867Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:47:09.810Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:47:09.811Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:09.811Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:09.811Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:47:10.942Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/d1/database/3b15207f-68c2-49d0-998e-d8344047d796/import
+---
+
+--- 2025-12-24T08:47:10.942Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:10.942Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:10.942Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:10.942Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T08:47:11.884Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T08:47:11.885Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:11.885Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T08:47:11.885Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T08:47:11.888Z log
+🌀 Starting import...
+---
+
+--- 2025-12-24T08:47:11.889Z log
+🌀 Processed 2 queries.
+---
+
+--- 2025-12-24T08:47:11.890Z log
+🚣 Executed 2 queries in 2.69ms (3 rows read, 4 rows written)
+   Database is currently at bookmark 0000000b-00000005-00004fde-9c1a28ed2b390370c18fd59966ef815d.
+---
+
+--- 2025-12-24T08:47:11.916Z log
+┌────────────────────────┬───────────┬──────────────┬────────────────────┐
+│ Total queries executed │ Rows read │ Rows written │ Database size (MB) │
+├────────────────────────┼───────────┼──────────────┼────────────────────┤
+│ 2                      │ 3         │ 4            │ 0.06               │
+└────────────────────────┴───────────┴──────────────┴────────────────────┘
+---
+
+--- 2025-12-24T08:47:11.922Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766566031922,"properties":{"amplitude_session_id":1766566026912,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":["remote"],"argsCombination":"remote","command":"wrangler d1 execute","args":{},"durationMs":5154,"durationSeconds":5.154,"durationMinutes":0.0859}}
+---

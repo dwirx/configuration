@@ -1,0 +1,355 @@
+
+--- 2026-01-02T06:23:31.525Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2026-01-02_06-23-31_100.log"
+---
+
+--- 2026-01-02T06:23:31.524Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1767335011523,"properties":{"amplitude_session_id":1767335011518,"amplitude_event_id":0,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["env"],"argsCombination":"env","command":"wrangler deploy","args":{}}}
+---
+
+--- 2026-01-02T06:23:31.562Z debug
+.env file not found at ".env.production". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T06:23:31.564Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T06:23:31.678Z log
+
+ ⛅️ wrangler 3.114.16 (update available 4.54.0)
+---------------------------------------------------------
+
+---
+
+--- 2026-01-02T06:23:31.911Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-01-02T06:23:31.958Z warn
+▲ [WARNING] Processing wrangler.toml configuration:
+
+  
+    - "env.production" environment configuration
+      - "vars" exists at the top level, but not on "env.production".
+        This is not what you probably want, since "vars" is not inherited by environments.
+        Please add "vars" to "env.production".
+
+
+---
+
+--- 2026-01-02T06:23:32.020Z debug
+Retrieving cached values for account from node_modules/.cache/wrangler
+---
+
+--- 2026-01-02T06:23:32.021Z debug
+Starting verifyWorkerMatchesCITag() with tag: undefined, name: passvault-api
+---
+
+--- 2026-01-02T06:23:32.021Z debug
+No WRANGLER_CI_MATCH_TAG variable provided, aborting verifyWorkerMatchesCITag()
+---
+
+--- 2026-01-02T06:23:32.025Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/services/passvault-api
+---
+
+--- 2026-01-02T06:23:32.026Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:32.026Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:32.026Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:33.755Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:33.757Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:33.757Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:33.757Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:33.770Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/passvault-api/deployments
+---
+
+--- 2026-01-02T06:23:33.770Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:33.770Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:33.770Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:35.243Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:35.244Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:35.244Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:35.244Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:35.608Z log
+Total Upload: 29.29 KiB / gzip: 6.99 KiB
+---
+
+--- 2026-01-02T06:23:35.626Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/passvault-api/versions
+---
+
+--- 2026-01-02T06:23:35.626Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:35.626Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:35.643Z debug
+BODY: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:35.643Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:38.759Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:38.760Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:38.760Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:38.760Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:38.763Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/passvault-api/deployments
+---
+
+--- 2026-01-02T06:23:38.763Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:38.764Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:38.764Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:40.413Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:40.413Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:40.413Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:40.413Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:40.416Z debug
+-- START CF API REQUEST: PATCH https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/passvault-api/script-settings
+---
+
+--- 2026-01-02T06:23:40.416Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:40.416Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:40.416Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:42.585Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:42.585Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:42.585Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:42.585Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:42.586Z log
+Worker Startup Time: 20 ms
+---
+
+--- 2026-01-02T06:23:42.589Z log
+Your worker has access to the following bindings:
+- D1 Databases:
+  - DB: passvault-db (ed03d8fe-6a25-4682-9406-2f3410ebc417)
+---
+
+--- 2026-01-02T06:23:42.593Z log
+Uploaded passvault-api (8.82 sec)
+---
+
+--- 2026-01-02T06:23:42.595Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/passvault-api/subdomain
+---
+
+--- 2026-01-02T06:23:42.595Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:42.595Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:42.595Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:44.137Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:44.137Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:44.137Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:44.137Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:44.138Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/passvault-api/subdomain
+---
+
+--- 2026-01-02T06:23:44.138Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:44.138Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:44.138Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:45.799Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:45.800Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:45.800Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:45.800Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:45.802Z debug
+-- START CF API REQUEST: PUT https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/passvault-api/routes
+---
+
+--- 2026-01-02T06:23:45.802Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:45.802Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:45.802Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:47.541Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:47.542Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:47.542Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:47.542Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:47.543Z log
+Deployed passvault-api triggers (3.40 sec)
+---
+
+--- 2026-01-02T06:23:47.544Z log
+  pass-api.lexa.my.id/* (zone name: lexa.my.id)
+---
+
+--- 2026-01-02T06:23:47.544Z log
+Current Version ID: f74cd6f0-4115-4503-902e-25be175ae2bf
+---
+
+--- 2026-01-02T06:23:47.547Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"deploy worker script","timestamp":1767335027547,"properties":{"category":"Workers","wranglerVersion":"3.114.16","os":"linux:x64","usesTypeScript":true,"durationMs":15525}}
+---
+
+--- 2026-01-02T06:23:47.554Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1767335027554,"properties":{"amplitude_session_id":1767335011518,"amplitude_event_id":1,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["env"],"argsCombination":"env","command":"wrangler deploy","args":{},"durationMs":16153,"durationSeconds":16.153,"durationMinutes":0.26921666666666666}}
+---

@@ -1,0 +1,240 @@
+
+--- 2026-01-02T05:40:49.785Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2026-01-02_05-40-48_795.log"
+---
+
+--- 2026-01-02T05:40:49.785Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1767332449784,"properties":{"amplitude_session_id":1767332449780,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages deploy","args":{}}}
+---
+
+--- 2026-01-02T05:40:49.830Z debug
+.env file not found at "/home/hades/FUN/cloudflareProjet/passvault/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T05:40:49.923Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2026-01-02T05:40:50.034Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2026-01-02T05:40:50.041Z debug
+fetching auth token grant_type=refresh_token&refresh_token=qKa0-rkNHwloqwXLSR43DAxoVQHqPA4uADzwtnNPH7U.ZguBQ5tYOVdiGu9gk0gDGgbR06qBWfxn1THVoD1wFC4&client_id=54d11594-84e4-41aa-b438-e81b8fa78ee7
+---
+
+--- 2026-01-02T05:40:50.041Z debug
+Checking if domain has Access enabled: dash.cloudflare.com
+---
+
+--- 2026-01-02T05:40:50.042Z debug
+Access switch not cached for: dash.cloudflare.com
+---
+
+--- 2026-01-02T05:40:50.357Z debug
+Caching access switch for: dash.cloudflare.com
+---
+
+--- 2026-01-02T05:40:50.358Z debug
+Fetching auth token from https://dash.cloudflare.com/oauth2/token
+---
+
+--- 2026-01-02T05:40:51.192Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/memberships
+---
+
+--- 2026-01-02T05:40:51.192Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:51.193Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:51.193Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:51.193Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T05:40:53.048Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T05:40:53.049Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:53.049Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:53.049Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T05:40:53.061Z debug
+Saving to cache: {"account":{"id":"f006ec5b85550c77e565a3f9f99a35c0","name":"Dwirxx@gmail.com's Account"}}
+---
+
+--- 2026-01-02T05:40:53.066Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/passvault-frontend
+---
+
+--- 2026-01-02T05:40:53.066Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:53.066Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:53.066Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:53.066Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T05:40:54.505Z debug
+-- START CF API RESPONSE: Not Found 404
+---
+
+--- 2026-01-02T05:40:54.507Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:54.507Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:40:54.507Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T05:41:52.082Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects
+---
+
+--- 2026-01-02T05:41:52.082Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:52.082Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:52.082Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:52.083Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T05:41:56.273Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T05:41:56.275Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:56.275Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:56.275Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T05:41:56.278Z debug
+Saving to cache: {"account_id":"f006ec5b85550c77e565a3f9f99a35c0","project_name":"passvault-frontend"}
+---
+
+--- 2026-01-02T05:41:56.279Z log
+✨ Successfully created the 'passvault-frontend' project.
+---
+
+--- 2026-01-02T05:41:56.282Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"create pages project","timestamp":1767332516281,"properties":{"category":"Workers","wranglerVersion":"4.53.0","os":"linux:x64"}}
+---
+
+--- 2026-01-02T05:41:56.610Z warn
+▲ [WARNING] Warning: Your working directory is a git repo and has uncommitted changes
+
+  To silence this warning, pass in --commit-dirty=true
+
+
+---
+
+--- 2026-01-02T05:41:56.617Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/passvault-frontend
+---
+
+--- 2026-01-02T05:41:56.618Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:56.618Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:56.618Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:56.618Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T05:41:58.037Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T05:41:58.037Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:58.037Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:41:58.037Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T05:41:58.044Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2026-01-02T05:41:58.048Z log
+
+---
+
+--- 2026-01-02T05:41:58.052Z error
+✘ [ERROR] Running configuration file validation for Pages:
+
+    - Configuration file for Pages projects does not support "routes"
+
+
+---
+
+--- 2026-01-02T05:41:58.052Z debug
+Error: Running configuration file validation for Pages:
+  - Configuration file for Pages projects does not support "routes"
+    at readPagesConfig (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:50207:11)
+    at deploy (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:218179:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)
+    at async Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:219122:50)
+    at async Object.handler (/home/hades/.local/share/fnm/node-versions/v22.21.1/installation/lib/node_modules/wrangler/wrangler-dist/cli.js:165176:7)
+---
+
+--- 2026-01-02T05:41:58.055Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1767332518054,"properties":{"amplitude_session_id":1767332449780,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages deploy","args":{},"durationMs":68424,"durationSeconds":68.424,"durationMinutes":1.1404,"errorType":"UserError"}}
+---

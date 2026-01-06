@@ -1,0 +1,80 @@
+
+--- 2025-12-24T07:23:42.027Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-24_07-23-41_133.log"
+---
+
+--- 2025-12-24T07:23:42.026Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766561022026,"properties":{"amplitude_session_id":1766561022016,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages project list","args":{}}}
+---
+
+--- 2025-12-24T07:23:42.062Z debug
+.env file not found at "/home/hades/FUN/NotesProjeck/beta/vaultnotes/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-24T07:23:42.145Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.56.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-24T07:23:42.229Z debug
+Retrieving cached values for account_id and project_name from node_modules/.cache/wrangler
+---
+
+--- 2025-12-24T07:23:42.236Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects
+---
+
+--- 2025-12-24T07:23:42.237Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:23:42.239Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:23:42.242Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:23:42.242Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-24T07:23:44.053Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-24T07:23:44.055Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:23:44.055Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-24T07:23:44.055Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-24T07:23:44.069Z debug
+Saving to cache: {"account_id":"f006ec5b85550c77e565a3f9f99a35c0"}
+---
+
+--- 2025-12-24T07:23:44.100Z log
+┌─────────────────┬─────────────────────────────────────────────┬──────────────┬───────────────┐
+│ Project Name    │ Project Domains                             │ Git Provider │ Last Modified │
+├─────────────────┼─────────────────────────────────────────────┼──────────────┼───────────────┤
+│ leafvault-app   │ leafvault-app.pages.dev                     │ No           │ 4 minutes ago │
+├─────────────────┼─────────────────────────────────────────────┼──────────────┼───────────────┤
+│ leafvault-notes │ leafvault-notes.pages.dev, notes.lexa.my.id │ No           │ 9 minutes ago │
+└─────────────────┴─────────────────────────────────────────────┴──────────────┴───────────────┘
+---
+
+--- 2025-12-24T07:23:44.102Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"list pages projects","timestamp":1766561024102,"properties":{"category":"Workers","wranglerVersion":"4.53.0","os":"linux:x64"}}
+---
+
+--- 2025-12-24T07:23:44.116Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766561024116,"properties":{"amplitude_session_id":1766561022016,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"none","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages project list","args":{},"durationMs":2231,"durationSeconds":2.231,"durationMinutes":0.03718333333333333}}
+---

@@ -1,0 +1,209 @@
+
+--- 2025-12-06T03:15:32.348Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-06_03-15-32_115.log"
+---
+
+--- 2025-12-06T03:15:32.348Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1764990932348,"properties":{"amplitude_session_id":1764990932342,"amplitude_event_id":0,"wranglerVersion":"3.114.15","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler triggers deploy","args":{"xJsonConfig":true,"j":true}}}
+---
+
+--- 2025-12-06T03:15:32.361Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-06T03:15:32.397Z log
+
+ ⛅️ wrangler 3.114.15 (update available 4.53.0)
+---------------------------------------------------------
+
+---
+
+--- 2025-12-06T03:15:32.554Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2025-12-06T03:15:32.568Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"deploy worker triggers","timestamp":1764990932568,"properties":{"category":"Workers","wranglerVersion":"3.114.15","os":"linux:x64"}}
+---
+
+--- 2025-12-06T03:15:32.571Z debug
+Retrieving cached values for account from node_modules/.cache/wrangler
+---
+
+--- 2025-12-06T03:15:32.574Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cctv-malang-proxy/subdomain
+---
+
+--- 2025-12-06T03:15:32.575Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:32.575Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:32.575Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-06T03:15:34.673Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-06T03:15:34.675Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:34.675Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:34.675Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-06T03:15:34.681Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cctv-malang-proxy/subdomain
+---
+
+--- 2025-12-06T03:15:34.681Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:34.681Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:34.681Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-06T03:15:37.325Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-06T03:15:37.325Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:37.325Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:37.325Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-06T03:15:37.334Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/zones?name=lexa.my.id&account.id=f006ec5b85550c77e565a3f9f99a35c0
+---
+
+--- 2025-12-06T03:15:37.334Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:37.334Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:37.334Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-06T03:15:38.468Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-06T03:15:38.469Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:38.469Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:38.469Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-06T03:15:38.472Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/zones/3135039f210c2bf30cd0fec4c5397c78/workers/routes
+---
+
+--- 2025-12-06T03:15:38.472Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:38.472Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:38.472Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-06T03:15:39.957Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-06T03:15:39.958Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:39.958Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:39.958Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-06T03:15:39.960Z debug
+-- START CF API REQUEST: PUT https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cctv-malang-proxy/routes
+---
+
+--- 2025-12-06T03:15:39.960Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:39.960Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:39.961Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-06T03:15:41.863Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-06T03:15:41.863Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:41.864Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-06T03:15:41.864Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-06T03:15:41.865Z log
+Deployed cctv-malang-proxy triggers (7.18 sec)
+---
+
+--- 2025-12-06T03:15:41.866Z log
+  cctv.lexa.my.id/* (zone name: lexa.my.id)
+---
+
+--- 2025-12-06T03:15:41.870Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1764990941870,"properties":{"amplitude_session_id":1764990932342,"amplitude_event_id":1,"wranglerVersion":"3.114.15","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler triggers deploy","args":{"xJsonConfig":true,"j":true},"durationMs":9560,"durationSeconds":9.56,"durationMinutes":0.15933333333333335}}
+---

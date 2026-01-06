@@ -1,0 +1,26 @@
+
+--- 2026-01-02T06:24:18.181Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2026-01-02_06-24-17_845.log"
+---
+
+--- 2026-01-02T06:24:18.180Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1767335058179,"properties":{"amplitude_session_id":1767335058171,"amplitude_event_id":0,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler routes list","args":{}}}
+---
+
+--- 2026-01-02T06:24:18.222Z log
+
+---
+
+--- 2026-01-02T06:24:18.428Z error
+✘ [ERROR] Unknown arguments: routes, list
+
+
+---
+
+--- 2026-01-02T06:24:18.488Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T06:24:18.581Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1767335058581,"properties":{"amplitude_session_id":1767335058171,"amplitude_event_id":1,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler routes list","args":{},"durationMs":470,"durationSeconds":0.47,"durationMinutes":0.007833333333333333,"errorType":"CommandLineArgsError","errorMessage":"yargs validation error"}}
+---

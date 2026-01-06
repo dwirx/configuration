@@ -16,6 +16,7 @@ COMMON_PATHS=(
 )
 
 CREATE_MISSING=0
+AUTO_DISCOVER=0
 
 usage() {
   cat <<'EOF'
@@ -24,13 +25,61 @@ Pemakaian:
 
 Opsi:
   -c, --create-missing  Buat path yang hilang di repo (folder/file kosong jika perlu)
+  -a, --auto            Deteksi otomatis isi repo (link semua kandidat)
   -h, --help            Tampilkan bantuan ini
 
 Contoh:
   ./setup.sh                            # tautan default
   ./setup.sh .config/nvim               # tautkan folder nvim dari repo ke $HOME
   ./setup.sh -c ~/.config/nvim          # jika belum ada di repo, buat/copy ke repo dulu lalu tautkan
+  ./setup.sh -a                         # auto-link semua yang ada di repo (kecuali yang di-skip)
 EOF
+}
+
+# Dedup target path.
+declare -A SEEN_TARGET
+add_target() {
+  local p="$1"
+  [[ -z "$p" ]] && return
+  # normalisasi trailing slash
+  p="${p%/}"
+  if [[ -n "${SEEN_TARGET[$p]:-}" ]]; then
+    return
+  fi
+  SEEN_TARGET["$p"]=1
+  TARGETS+=("$p")
+}
+
+# Temukan kandidat otomatis dari isi repo.
+discover_repo_targets() {
+  # Skip file/dir tertentu.
+  local skip=(
+    ".git"
+    ".gitignore"
+    ".gitattributes"
+    ".github"
+    ".dotfile-backups"
+    "setup.sh"
+    "README.md"
+    "LICENSE"
+  )
+
+  local is_skip
+  while IFS= read -r -d '' item; do
+    local rel="${item#"$REPO_DIR"/}"
+    [[ -z "$rel" ]] && continue
+
+    is_skip=0
+    for s in "${skip[@]}"; do
+      if [[ "$rel" == "$s" || "$rel" == "$s/"* ]]; then
+        is_skip=1
+        break
+      fi
+    done
+    [[ $is_skip -eq 1 ]] && continue
+
+    add_target "$rel"
+  done < <(find "$REPO_DIR" -mindepth 1 -maxdepth 4 -print0)
 }
 
 # Parsing opsi sederhana.
@@ -38,6 +87,10 @@ while [[ $# -gt 0 ]]; do
   case "$1" in
     -c|--create-missing)
       CREATE_MISSING=1
+      shift
+      ;;
+    -a|--auto)
+      AUTO_DISCOVER=1
       shift
       ;;
     -h|--help)
@@ -58,16 +111,26 @@ while [[ $# -gt 0 ]]; do
   esac
 done
 
-TARGETS=("$@")
+TARGETS=()
+for arg in "$@"; do
+  add_target "$arg"
+done
 
 # Jika tidak ada argumen, pakai daftar default dan tambahkan path umum yang ditemukan.
 if [[ ${#TARGETS[@]} -eq 0 ]]; then
-  TARGETS=("${FILES[@]}")
+  for p in "${FILES[@]}"; do
+    add_target "$p"
+  done
   for p in "${COMMON_PATHS[@]}"; do
     if [[ -e "$REPO_DIR/$p" || -e "$HOME/$p" ]]; then
-      TARGETS+=("$p")
+      add_target "$p"
     fi
   done
+fi
+
+# Jika mode auto aktif, tambahkan seluruh kandidat dari repo.
+if [[ $AUTO_DISCOVER -eq 1 ]]; then
+  discover_repo_targets
 fi
 
 mkdir -p "$BACKUP_DIR"

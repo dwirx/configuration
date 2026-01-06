@@ -1,0 +1,193 @@
+
+--- 2025-12-26T05:04:32.003Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-26_05-04-31_179.log"
+---
+
+--- 2025-12-26T05:04:32.003Z log
+
+Cloudflare collects anonymous telemetry about your usage of Wrangler. Learn more at https://github.com/cloudflare/workers-sdk/tree/main/packages/wrangler/telemetry.md
+---
+
+--- 2025-12-26T05:04:32.016Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766725472016,"properties":{"amplitude_session_id":1766725472000,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler deploy","args":{}}}
+---
+
+--- 2025-12-26T05:04:32.047Z debug
+.env file not found at "/home/hades/FUN/tempmail/vaultnotes-beta/worker/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-26T05:04:32.048Z debug
+.env file not found at "/home/hades/FUN/tempmail/vaultnotes-beta/worker/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-26T05:04:32.131Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-26T05:04:32.884Z warn
+▲ [WARNING] Multiple environments are defined in the Wrangler configuration file, but no target environment was specified for the deploy command.
+
+  To avoid unintentional changes to the wrong environment, it is recommended to explicitly specify
+  the target environment using the `-e|--env` flag.
+  If your intention is to use the top-level environment of your configuration simply pass an empty
+  string to the flag to target such environment. For example `--env=""`.
+
+
+---
+
+--- 2025-12-26T05:04:33.050Z debug
+Retrieving cached values for account from ../node_modules/.cache/wrangler
+---
+
+--- 2025-12-26T05:04:33.051Z debug
+Starting verifyWorkerMatchesCITag() with tag: undefined, name: leafvault-api
+---
+
+--- 2025-12-26T05:04:33.051Z debug
+No WRANGLER_CI_MATCH_TAG variable provided, aborting verifyWorkerMatchesCITag()
+---
+
+--- 2025-12-26T05:04:33.059Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/services/leafvault-api
+---
+
+--- 2025-12-26T05:04:33.059Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:33.061Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:33.061Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:33.061Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T05:04:35.098Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T05:04:35.099Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:35.099Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:35.100Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T05:04:35.111Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/secrets
+---
+
+--- 2025-12-26T05:04:35.111Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:35.111Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:35.111Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:35.111Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T05:04:36.712Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T05:04:36.713Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:36.713Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:36.713Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T05:04:36.722Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/leafvault-api/deployments
+---
+
+--- 2025-12-26T05:04:36.722Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:36.722Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:36.722Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:36.722Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-26T05:04:38.165Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-26T05:04:38.166Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:38.166Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-26T05:04:38.166Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-26T05:04:38.223Z log
+
+---
+
+--- 2025-12-26T05:04:38.234Z error
+✘ [ERROR] Build failed with 2 errors:
+
+  ✘ [ERROR] Could not resolve "hono"
+  
+      src/index.ts:1:36:
+        1 │ import { Hono, Context, Next } from 'hono';
+          ╵                                     ~~~~~~
+  
+    You can mark the path "hono" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/cors"
+  
+      src/index.ts:2:21:
+        2 │ import { cors } from 'hono/cors';
+          ╵                      ~~~~~~~~~~~
+  
+    You can mark the path "hono/cors" as external to exclude it from the bundle, which will remove
+  this error and leave the unresolved path in the bundle.
+  
+  
+
+
+---
+
+--- 2025-12-26T05:04:38.244Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1766725478244,"properties":{"amplitude_session_id":1766725472000,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler deploy","args":{},"durationMs":6354,"durationSeconds":6.354,"durationMinutes":0.10590000000000001,"errorType":"BuildFailure"}}
+---

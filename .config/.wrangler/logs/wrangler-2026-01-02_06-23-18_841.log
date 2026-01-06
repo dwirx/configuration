@@ -1,0 +1,201 @@
+
+--- 2026-01-02T06:23:19.202Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2026-01-02_06-23-18_841.log"
+---
+
+--- 2026-01-02T06:23:19.201Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1767334999201,"properties":{"amplitude_session_id":1767334999194,"amplitude_event_id":0,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler whoami","args":{}}}
+---
+
+--- 2026-01-02T06:23:19.234Z debug
+.env file not found at ".env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T06:23:19.337Z log
+
+ ⛅️ wrangler 3.114.16 (update available 4.54.0)
+---------------------------------------------------------
+
+---
+
+--- 2026-01-02T06:23:19.751Z warn
+▲ [WARNING] The version of Wrangler you are using is now out-of-date.
+
+  Please update to the latest version to prevent critical errors.
+  Run `npm install --save-dev wrangler@4` to update to the latest version.
+  After installation, run Wrangler with `npx wrangler`.
+
+
+---
+
+--- 2026-01-02T06:23:19.770Z log
+Getting User settings...
+---
+
+--- 2026-01-02T06:23:19.773Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/user
+---
+
+--- 2026-01-02T06:23:19.774Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:19.774Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:19.774Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:21.229Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:21.236Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:21.236Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:21.236Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:21.246Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts?page=1
+---
+
+--- 2026-01-02T06:23:21.248Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:21.248Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:21.248Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T06:23:22.298Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T06:23:22.299Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:22.299Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T06:23:22.299Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T06:23:22.304Z log
+👋 You are logged in with an OAuth Token, associated with the email dwirxx@gmail.com.
+---
+
+--- 2026-01-02T06:23:22.328Z log
+┌────────────────────────────┬──────────────────────────────────┐
+│ Account Name               │ Account ID                       │
+├────────────────────────────┼──────────────────────────────────┤
+│ Dwirxx@gmail.com's Account │ f006ec5b85550c77e565a3f9f99a35c0 │
+└────────────────────────────┴──────────────────────────────────┘
+---
+
+--- 2026-01-02T06:23:22.336Z log
+🔓 Token Permissions:
+---
+
+--- 2026-01-02T06:23:22.337Z log
+Scope (Access)
+---
+
+--- 2026-01-02T06:23:22.338Z log
+- account (read)
+---
+
+--- 2026-01-02T06:23:22.339Z log
+- user (read)
+---
+
+--- 2026-01-02T06:23:22.340Z log
+- workers (write)
+---
+
+--- 2026-01-02T06:23:22.341Z log
+- workers_kv (write)
+---
+
+--- 2026-01-02T06:23:22.342Z log
+- workers_routes (write)
+---
+
+--- 2026-01-02T06:23:22.342Z log
+- workers_scripts (write)
+---
+
+--- 2026-01-02T06:23:22.343Z log
+- workers_tail (read)
+---
+
+--- 2026-01-02T06:23:22.343Z log
+- d1 (write)
+---
+
+--- 2026-01-02T06:23:22.344Z log
+- pages (write)
+---
+
+--- 2026-01-02T06:23:22.344Z log
+- zone (read)
+---
+
+--- 2026-01-02T06:23:22.344Z log
+- ssl_certs (write)
+---
+
+--- 2026-01-02T06:23:22.345Z log
+- ai (write)
+---
+
+--- 2026-01-02T06:23:22.347Z log
+- queues (write)
+---
+
+--- 2026-01-02T06:23:22.350Z log
+- pipelines (write)
+---
+
+--- 2026-01-02T06:23:22.351Z log
+- secrets_store (write)
+---
+
+--- 2026-01-02T06:23:22.352Z log
+- containers (write)
+---
+
+--- 2026-01-02T06:23:22.353Z log
+- cloudchamber (write)
+---
+
+--- 2026-01-02T06:23:22.353Z log
+- connectivity (admin)
+---
+
+--- 2026-01-02T06:23:22.354Z log
+- offline_access 
+---
+
+--- 2026-01-02T06:23:22.356Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"view accounts","timestamp":1767335002356,"properties":{"category":"Workers","wranglerVersion":"3.114.16","os":"linux:x64"}}
+---
+
+--- 2026-01-02T06:23:22.362Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1767335002362,"properties":{"amplitude_session_id":1767334999194,"amplitude_event_id":1,"wranglerVersion":"3.114.16","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"npm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler whoami","args":{},"durationMs":3225,"durationSeconds":3.225,"durationMinutes":0.05375}}
+---

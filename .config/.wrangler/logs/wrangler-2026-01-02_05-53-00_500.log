@@ -1,0 +1,140 @@
+
+--- 2026-01-02T05:53:01.375Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2026-01-02_05-53-00_500.log"
+---
+
+--- 2026-01-02T05:53:01.375Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1767333181374,"properties":{"amplitude_session_id":1767333181366,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages deploy","args":{}}}
+---
+
+--- 2026-01-02T05:53:01.419Z debug
+.env file not found at "/home/hades/FUN/cloudflareProjet/passvault/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2026-01-02T05:53:01.502Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2026-01-02T05:53:01.577Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2026-01-02T05:53:01.579Z debug
+Retrieving cached values for account_id and project_name from node_modules/.cache/wrangler
+---
+
+--- 2026-01-02T05:53:01.582Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/passvault-frontend
+---
+
+--- 2026-01-02T05:53:01.583Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:01.584Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:01.584Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:01.584Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T05:53:03.618Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T05:53:03.622Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:03.622Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:03.622Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T05:53:03.760Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/pages/projects/passvault-frontend
+---
+
+--- 2026-01-02T05:53:03.760Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:03.760Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:03.760Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:03.760Z debug
+-- END CF API REQUEST
+---
+
+--- 2026-01-02T05:53:05.264Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2026-01-02T05:53:05.265Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:05.265Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2026-01-02T05:53:05.265Z debug
+-- END CF API RESPONSE
+---
+
+--- 2026-01-02T05:53:05.274Z debug
+Configuration file belonging to ⚡️ Pages ⚡️ project detected.
+---
+
+--- 2026-01-02T05:53:05.679Z error
+✘ [ERROR] Build failed with 1 error:
+
+  ✘ [ERROR] Could not resolve "../../../src/lib/db"
+  
+      api/passwords.ts:6:61:
+        6 │ ...dService, SessionService, UserService } from
+  '../../../src/lib/db';
+          ╵                                                 ~~~~~~~~~~~~~~~~~~~~~
+  
+  
+
+
+---
+
+--- 2026-01-02T05:53:05.691Z log
+
+---
+
+--- 2026-01-02T05:53:05.697Z error
+✘ [ERROR] Build failed with 1 error:
+
+  ✘ [ERROR] Could not resolve "../../../src/lib/db"
+  
+      api/passwords.ts:6:61:
+        6 │ ...dService, SessionService, UserService } from
+  '../../../src/lib/db';
+          ╵                                                 ~~~~~~~~~~~~~~~~~~~~~
+  
+  
+
+
+---
+
+--- 2026-01-02T05:53:05.703Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1767333185703,"properties":{"amplitude_session_id":1767333181366,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler pages deploy","args":{},"durationMs":4475,"durationSeconds":4.475,"durationMinutes":0.07458333333333332,"errorType":"BuildFailure"}}
+---

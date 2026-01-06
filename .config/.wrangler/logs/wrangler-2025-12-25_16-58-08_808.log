@@ -1,0 +1,500 @@
+
+--- 2025-12-25T16:58:09.463Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-25_16-58-08_808.log"
+---
+
+--- 2025-12-25T16:58:09.463Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766681889463,"properties":{"amplitude_session_id":1766681889458,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["minify"],"argsCombination":"minify","command":"wrangler deploy","args":{}}}
+---
+
+--- 2025-12-25T16:58:09.505Z debug
+.env file not found at "/home/hades/FUN/tempmail/cloudflare_temp_email/worker/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T16:58:09.506Z debug
+.env file not found at "/home/hades/FUN/tempmail/cloudflare_temp_email/worker/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T16:58:09.583Z log
+
+ ⛅️ wrangler 4.53.0 (update available 4.54.0)
+─────────────────────────────────────────────
+---
+
+--- 2025-12-25T16:58:09.694Z debug
+Retrieving cached values for account from node_modules/.cache/wrangler
+---
+
+--- 2025-12-25T16:58:09.695Z debug
+Starting verifyWorkerMatchesCITag() with tag: undefined, name: cloudflare_temp_email
+---
+
+--- 2025-12-25T16:58:09.695Z debug
+No WRANGLER_CI_MATCH_TAG variable provided, aborting verifyWorkerMatchesCITag()
+---
+
+--- 2025-12-25T16:58:09.697Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/services/cloudflare_temp_email
+---
+
+--- 2025-12-25T16:58:09.698Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:09.698Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:09.698Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:09.698Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T16:58:11.839Z debug
+-- START CF API RESPONSE: Not Found 404
+---
+
+--- 2025-12-25T16:58:11.839Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:11.840Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:11.840Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T16:58:11.844Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/secrets
+---
+
+--- 2025-12-25T16:58:11.844Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:11.844Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:11.844Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:11.844Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T16:58:13.638Z debug
+-- START CF API RESPONSE: Not Found 404
+---
+
+--- 2025-12-25T16:58:13.639Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:13.639Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:13.639Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T16:58:13.663Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/deployments
+---
+
+--- 2025-12-25T16:58:13.664Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:13.664Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:13.664Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:13.664Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T16:58:15.155Z debug
+-- START CF API RESPONSE: Not Found 404
+---
+
+--- 2025-12-25T16:58:15.156Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:15.156Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T16:58:15.156Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T16:58:15.785Z log
+
+---
+
+--- 2025-12-25T16:58:15.971Z error
+✘ [ERROR] Build failed with 34 errors:
+
+  ✘ [ERROR] Could not resolve "hono"
+  
+      src/admin_api/index.ts:1:21:
+        1 │ import { Hono } from 'hono'
+          ╵                      ~~~~~~
+  
+    You can mark the path "hono" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/admin_api/index.ts:2:20:
+        2 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono"
+  
+      src/commom_api.ts:1:21:
+        1 │ import { Hono } from 'hono'
+          ╵                      ~~~~~~
+  
+    You can mark the path "hono" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/common.ts:2:20:
+        2 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "mimetext"
+  
+      src/email/auto_reply.ts:1:34:
+        1 │ import { createMimeMessage } from "mimetext";
+          ╵                                   ~~~~~~~~~~
+  
+    You can mark the path "mimetext" as external to exclude it from the bundle, which will remove
+  this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "mimetext"
+  
+      src/email/check_attachment.ts:3:34:
+        3 │ import { createMimeMessage } from "mimetext";
+          ╵                                   ~~~~~~~~~~
+  
+    You can mark the path "mimetext" as external to exclude it from the bundle, which will remove
+  this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/mails_api/address_auth.ts:4:20:
+        4 │ import { Jwt } from 'hono/utils/jwt';
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono"
+  
+      src/mails_api/index.ts:1:30:
+        1 │ import { Context, Hono } from 'hono'
+          ╵                               ~~~~~~
+  
+    You can mark the path "hono" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "@aws-sdk/client-s3"
+  
+      src/mails_api/s3_attachment.ts:8:7:
+        8 │ } from "@aws-sdk/client-s3";
+          ╵        ~~~~~~~~~~~~~~~~~~~~
+  
+    You can mark the path "@aws-sdk/client-s3" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve
+  "@aws-sdk/s3-request-presigner"
+  
+      src/mails_api/s3_attachment.ts:9:29:
+        9 │ import { getSignedUrl } from "@aws-sdk/s3-request-presigner";
+          ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+    You can mark the path "@aws-sdk/s3-request-presigner" as external to exclude it from the bundle,
+  which will remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono"
+  
+      src/mails_api/send_mail_api.ts:1:30:
+        1 │ import { Context, Hono } from 'hono'
+          ╵                               ~~~~~~
+  
+    You can mark the path "hono" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/mails_api/send_mail_api.ts:2:20:
+        2 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "mimetext"
+  
+      src/mails_api/send_mail_api.ts:3:34:
+        3 │ import { createMimeMessage } from 'mimetext';
+          ╵                                   ~~~~~~~~~~
+  
+    You can mark the path "mimetext" as external to exclude it from the bundle, which will remove
+  this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "resend"
+  
+      src/mails_api/send_mail_api.ts:4:23:
+        4 │ import { Resend } from 'resend';
+          ╵                        ~~~~~~~~
+  
+    You can mark the path "resend" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "worker-mailer"
+  
+      src/mails_api/send_mail_api.ts:5:50:
+        5 │ import { WorkerMailer, WorkerMailerOptions } from 'worker-mailer';
+          ╵                                                   ~~~~~~~~~~~~~~~
+  
+    You can mark the path "worker-mailer" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/telegram_api/common.ts:2:20:
+        2 │ import { Jwt } from "hono/utils/jwt";
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono"
+  
+      src/telegram_api/index.ts:1:21:
+        1 │ import { Hono } from 'hono'
+          ╵                      ~~~~~~
+  
+    You can mark the path "hono" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/telegram_api/miniapp.ts:2:20:
+        2 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "telegraf"
+  
+      src/telegram_api/telegram.ts:3:55:
+        3 │ import { Telegraf, Context as TgContext, Markup } from "telegraf";
+          ╵                                                        ~~~~~~~~~~
+  
+    You can mark the path "telegraf" as external to exclude it from the bundle, which will remove
+  this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "telegraf/filters"
+  
+      src/telegram_api/telegram.ts:4:30:
+        4 │ import { callbackQuery } from "telegraf/filters";
+          ╵                               ~~~~~~~~~~~~~~~~~~
+  
+    You can mark the path "telegraf/filters" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/user_api/bind_address.ts:2:20:
+        2 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono"
+  
+      src/user_api/index.ts:1:21:
+        1 │ import { Hono } from 'hono';
+          ╵                      ~~~~~~
+  
+    You can mark the path "hono" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/user_api/oauth2.ts:2:20:
+        2 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "jsonpath-plus"
+  
+      src/user_api/oauth2.ts:75:50:
+        75 │                 const { JSONPath } = await import('jsonpath-plus');
+           ╵                                                   ~~~~~~~~~~~~~~~
+  
+    You can mark the path "jsonpath-plus" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle. You can also add ".catch()" here to
+  handle this failure at run-time instead of bundle-time.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/user_api/passkey.ts:2:20:
+        2 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "@simplewebauthn/server"
+  
+      src/user_api/passkey.ts:8:7:
+        8 │ } from '@simplewebauthn/server';
+          ╵        ~~~~~~~~~~~~~~~~~~~~~~~~
+  
+    You can mark the path "@simplewebauthn/server" as external to exclude it from the bundle, which
+  will remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve
+  "@simplewebauthn/server/helpers"
+  
+      src/user_api/passkey.ts:12:29:
+        12 │ import { isoBase64URL } from '@simplewebauthn/server/helpers';
+           ╵                              ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+  
+    You can mark the path "@simplewebauthn/server/helpers" as external to exclude it from the
+  bundle, which will remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/user_api/settings.ts:8:20:
+        8 │ import { Jwt } from "hono/utils/jwt";
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/user_api/user.ts:2:20:
+        2 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "mimetext"
+  
+      src/utils.ts:2:34:
+        2 │ import { createMimeMessage } from "mimetext";
+          ╵                                   ~~~~~~~~~~
+  
+    You can mark the path "mimetext" as external to exclude it from the bundle, which will remove
+  this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono"
+  
+      src/worker.ts:1:30:
+        1 │ import { Context, Hono } from 'hono'
+          ╵                               ~~~~~~
+  
+    You can mark the path "hono" as external to exclude it from the bundle, which will remove this
+  error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/cors"
+  
+      src/worker.ts:2:21:
+        2 │ import { cors } from 'hono/cors';
+          ╵                      ~~~~~~~~~~~
+  
+    You can mark the path "hono/cors" as external to exclude it from the bundle, which will remove
+  this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/jwt"
+  
+      src/worker.ts:3:20:
+        3 │ import { jwt } from 'hono/jwt'
+          ╵                     ~~~~~~~~~~
+  
+    You can mark the path "hono/jwt" as external to exclude it from the bundle, which will remove
+  this error and leave the unresolved path in the bundle.
+  
+  
+  ✘ [ERROR] Could not resolve "hono/utils/jwt"
+  
+      src/worker.ts:4:20:
+        4 │ import { Jwt } from 'hono/utils/jwt'
+          ╵                     ~~~~~~~~~~~~~~~~
+  
+    You can mark the path "hono/utils/jwt" as external to exclude it from the bundle, which will
+  remove this error and leave the unresolved path in the bundle.
+  
+  
+
+
+---
+
+--- 2025-12-25T16:58:15.976Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command errored","timestamp":1766681895976,"properties":{"amplitude_session_id":1766681889458,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":["minify"],"argsCombination":"minify","command":"wrangler deploy","args":{},"durationMs":6607,"durationSeconds":6.607,"durationMinutes":0.11011666666666667,"errorType":"BuildFailure"}}
+---

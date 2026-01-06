@@ -1,0 +1,34 @@
+
+--- 2025-12-06T03:02:34.441Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-06_03-02-33_179.log"
+---
+
+--- 2025-12-06T03:02:34.441Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1764990154440,"properties":{"amplitude_session_id":1764990154435,"amplitude_event_id":0,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler logout","args":{}}}
+---
+
+--- 2025-12-06T03:02:34.492Z debug
+.env file not found at "/home/hades/FUN/pythonProject/cctvmalang/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-06T03:02:34.493Z debug
+.env file not found at "/home/hades/FUN/pythonProject/cctvmalang/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-06T03:02:34.604Z log
+
+ ⛅️ wrangler 4.53.0
+───────────────────
+---
+
+--- 2025-12-06T03:02:35.548Z log
+Successfully logged out.
+---
+
+--- 2025-12-06T03:02:35.555Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"logout user","timestamp":1764990155555,"properties":{"category":"Workers","wranglerVersion":"4.53.0","os":"linux:x64"}}
+---
+
+--- 2025-12-06T03:02:35.566Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1764990155566,"properties":{"amplitude_session_id":1764990154435,"amplitude_event_id":1,"wranglerVersion":"4.53.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":true,"hasAssets":false,"argsUsed":[],"argsCombination":"","command":"wrangler logout","args":{},"durationMs":1263,"durationSeconds":1.263,"durationMinutes":0.02105}}
+---

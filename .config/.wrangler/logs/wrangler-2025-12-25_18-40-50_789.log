@@ -1,0 +1,566 @@
+
+--- 2025-12-25T18:40:51.717Z debug
+🪵  Writing logs to "/home/hades/.config/.wrangler/logs/wrangler-2025-12-25_18-40-50_789.log"
+---
+
+--- 2025-12-25T18:40:51.717Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command started","timestamp":1766688051716,"properties":{"amplitude_session_id":1766688051709,"amplitude_event_id":0,"wranglerVersion":"4.54.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"pnpm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":["minify"],"argsCombination":"minify","command":"wrangler deploy","args":{}}}
+---
+
+--- 2025-12-25T18:40:51.766Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T18:40:51.767Z debug
+.env file not found at "/home/hades/FUN/tempmail/lexa_tempmail/worker/.env.local". Continuing... For more details, refer to https://developers.cloudflare.com/workers/wrangler/system-environment-variables/
+---
+
+--- 2025-12-25T18:40:51.937Z log
+
+ ⛅️ wrangler 4.54.0
+───────────────────
+---
+
+--- 2025-12-25T18:40:52.057Z debug
+Starting verifyWorkerMatchesCITag() with tag: undefined, name: cloudflare_temp_email
+---
+
+--- 2025-12-25T18:40:52.057Z debug
+No WRANGLER_CI_MATCH_TAG variable provided, aborting verifyWorkerMatchesCITag()
+---
+
+--- 2025-12-25T18:40:52.061Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/services/cloudflare_temp_email
+---
+
+--- 2025-12-25T18:40:52.062Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:52.063Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:52.064Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:52.064Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:40:53.808Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:40:53.813Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:53.813Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:53.813Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:40:53.832Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/deployments
+---
+
+--- 2025-12-25T18:40:53.832Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:53.833Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:53.833Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:53.833Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:40:55.273Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:40:55.273Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:55.274Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:55.274Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:40:57.705Z log
+Total Upload: 1626.92 KiB / gzip: 459.30 KiB
+---
+
+--- 2025-12-25T18:40:57.709Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/settings
+---
+
+--- 2025-12-25T18:40:57.709Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:57.709Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:57.709Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:57.709Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:40:59.197Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:40:59.197Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:59.197Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:59.197Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:40:59.208Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/versions
+---
+
+--- 2025-12-25T18:40:59.208Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:59.208Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:59.209Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:59.221Z debug
+BODY: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:40:59.221Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:07.895Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:07.895Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:07.896Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:07.896Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:07.898Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/deployments
+---
+
+--- 2025-12-25T18:41:07.898Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:07.898Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:07.898Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:07.898Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:09.581Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:09.582Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:09.582Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:09.582Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:09.583Z debug
+-- START CF API REQUEST: PATCH https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/script-settings
+---
+
+--- 2025-12-25T18:41:09.583Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:09.583Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:09.583Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:09.583Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:11.143Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:11.144Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:11.144Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:11.144Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:11.144Z log
+Worker Startup Time: 55 ms
+---
+
+--- 2025-12-25T18:41:11.148Z log
+Your Worker has access to the following bindings:
+---
+
+--- 2025-12-25T18:41:11.148Z log
+Binding                                                                        Resource                  
+---
+
+--- 2025-12-25T18:41:11.149Z log
+env.SEND_MAIL (unrestricted)                                                   Send Email                
+---
+
+--- 2025-12-25T18:41:11.149Z log
+env.DB (lexa-tempmail-dev)                                                     D1 Database               
+---
+
+--- 2025-12-25T18:41:11.149Z log
+env.DEFAULT_LANG ("en")                                                        Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.150Z log
+env.PREFIX ("")                                                                Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.150Z log
+env.ADMIN_PASSWORDS (["Arema132."])                                            Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.151Z log
+env.DEFAULT_DOMAINS (["lexa.my.id"])                                           Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.151Z log
+env.DOMAINS (["lexa.my.id"])                                                   Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.151Z log
+env.JWT_SECRET ("JTmkVH30AkAv+Rkdh0adOReDa9cOIzuAI0BYJ...")                    Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.151Z log
+env.BLACK_LIST ("")                                                            Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.151Z log
+env.ENABLE_USER_CREATE_EMAIL (true)                                            Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.152Z log
+env.ENABLE_USER_DELETE_EMAIL (true)                                            Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.152Z log
+env.ENABLE_AUTO_REPLY (false)                                                  Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.152Z log
+env.CF_TURNSTILE_SITE_KEY ("0x4AAAAAACJExvZEoLPf3P8C")                         Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.152Z log
+env.CF_TURNSTILE_SECRET_KEY ("0x4AAAAAACJExrezM3hZhstE5MnCzflEm3I")            Environment Variable      
+---
+
+--- 2025-12-25T18:41:11.152Z log
+
+---
+
+--- 2025-12-25T18:41:11.163Z log
+Uploaded cloudflare_temp_email (17.33 sec)
+---
+
+--- 2025-12-25T18:41:11.166Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/subdomain
+---
+
+--- 2025-12-25T18:41:11.166Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:11.166Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:11.166Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:11.166Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:12.752Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:12.753Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:12.753Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:12.753Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:12.758Z debug
+-- START CF API REQUEST: POST https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/subdomain
+---
+
+--- 2025-12-25T18:41:12.758Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:12.759Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:12.760Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:12.760Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:14.376Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:14.377Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:14.377Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:14.377Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:14.384Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/zones
+---
+
+--- 2025-12-25T18:41:14.384Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:14.384Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:14.384Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:14.384Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:15.435Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:15.436Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:15.437Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:15.437Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:15.439Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/zones
+---
+
+--- 2025-12-25T18:41:15.439Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:15.440Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:15.440Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:15.440Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:16.388Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:16.390Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:16.390Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:16.390Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:16.392Z debug
+-- START CF API REQUEST: GET https://api.cloudflare.com/client/v4/zones/3135039f210c2bf30cd0fec4c5397c78/workers/routes
+---
+
+--- 2025-12-25T18:41:16.392Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:16.393Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:16.393Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:16.393Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:17.934Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:17.935Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:17.935Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:17.935Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:17.936Z debug
+-- START CF API REQUEST: PUT https://api.cloudflare.com/client/v4/accounts/f006ec5b85550c77e565a3f9f99a35c0/workers/scripts/cloudflare_temp_email/domains/records
+---
+
+--- 2025-12-25T18:41:17.936Z debug
+QUERY STRING: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:17.936Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:17.936Z debug
+INIT: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:17.936Z debug
+-- END CF API REQUEST
+---
+
+--- 2025-12-25T18:41:19.532Z debug
+-- START CF API RESPONSE: OK 200
+---
+
+--- 2025-12-25T18:41:19.533Z debug
+HEADERS: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:19.533Z debug
+RESPONSE: omitted; set WRANGLER_LOG_SANITIZE=false to include sanitized data
+---
+
+--- 2025-12-25T18:41:19.533Z debug
+-- END CF API RESPONSE
+---
+
+--- 2025-12-25T18:41:19.535Z log
+Deployed cloudflare_temp_email triggers (8.37 sec)
+---
+
+--- 2025-12-25T18:41:19.536Z log
+  temp-mail-api.lexa.my.id (custom domain)
+---
+
+--- 2025-12-25T18:41:19.536Z log
+Current Version ID: 5dec260e-f0a3-4743-92d9-45e3fc5c32c9
+---
+
+--- 2025-12-25T18:41:19.549Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"deploy worker script","timestamp":1766688079548,"properties":{"category":"Workers","wranglerVersion":"4.54.0","os":"linux:x64","usesTypeScript":true,"durationMs":27481}}
+---
+
+--- 2025-12-25T18:41:19.567Z debug
+Metrics dispatcher: Posting data {"deviceId":"d39dff02-21f2-40cf-941a-454076f127d1","event":"wrangler command completed","timestamp":1766688079567,"properties":{"amplitude_session_id":1766688051709,"amplitude_event_id":1,"wranglerVersion":"4.54.0","osPlatform":"Linux","osVersion":"#1 SMP PREEMPT_DYNAMIC Thu Jun  5 18:30:46 UTC 2025","nodeVersion":22,"packageManager":"pnpm","isFirstUsage":false,"configFileType":"toml","isCI":false,"isPagesCI":false,"isWorkersCI":false,"isInteractive":false,"hasAssets":false,"argsUsed":["minify"],"argsCombination":"minify","command":"wrangler deploy","args":{},"durationMs":27961,"durationSeconds":27.961,"durationMinutes":0.46601666666666663}}
+---
